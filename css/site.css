@@ -1,0 +1,30 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.boxAvatar {
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 5px #333;
+}
+.boxContainerApps {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+}
