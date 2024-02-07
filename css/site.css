@@ -2,31 +2,8 @@ html {
   font-size: 14px;
 }
 
-div{
+div {}
 
-  
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-
-svg {
-  max-width: 120px;
-}
-}
-@media (max-width: 768px) {
-
-.imgApp{
-  max-width: 230px;
-}
-
-svg{  
-  max-width: 80px;
-}
-
-
-}
 html {
   position: relative;
   min-height: 100%;
@@ -37,23 +14,55 @@ body {
 }
 
 .boxAvatar {
-    width: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: solid 5px #333;
-}
-.boxContainerApps {
-    display: flex; 
-    gap: 1em;
- 
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 5px #333;
 }
 
-.card{    
-  min-width: 220px;
-  max-width: 500px;
-  border-color: #05222b;      
+.boxContainerApps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-around;
+
 }
- .svg{
-max-width:"150px";
-  max-height:"150px";
+
+.card {
+  min-width: 300px;
+  max-width: 400px;
+  border-color: #05222b;
+}
+
+.svg {
+  max-width: "150px";
+  max-height: "150px";
+}
+
+
+@media (min-width: 769px) {
+  html {
+    font-size: 16px;
+  }
+
+  svg {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .imgApp {
+    max-width: 230px;
+  display: none;}
+
+  svg {
+    max-width:  80px;
+  }
+
+  .card{    
+    min-width: auto;
+    max-width: auto;      
+  }
 }
