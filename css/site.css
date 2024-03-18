@@ -4,6 +4,15 @@ html {
 
 div {}
 
+.allison-regular {
+  font-family: "Allison", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  ;
+}
+
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
