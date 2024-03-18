@@ -4,7 +4,6 @@ html {
 
 div {}
 
-<<<<<<< HEAD
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -28,8 +27,6 @@ div {}
 
 }
 
-=======
->>>>>>> 9af4716b098268443c2c83f8210dc2b99751a5e3
 html {
   position: relative;
   min-height: 100%;
@@ -46,7 +43,6 @@ body {
   border: solid 5px #333;
 }
 
-<<<<<<< HEAD
 .avatarcasal {
   width: 250px;
 }
@@ -55,19 +51,10 @@ body {
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
-=======
-.boxContainerApps {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: space-around;
->>>>>>> 9af4716b098268443c2c83f8210dc2b99751a5e3
 
 }
 
 .card {
-<<<<<<< HEAD
   min-width: 220px;
   max-width: 500px;
   border-color: #05222b;
@@ -95,41 +82,3 @@ body {
   border-radius: 15px;
   ;
 }
-=======
-  min-width: 300px;
-  max-width: 400px;
-  border-color: #05222b;
-}
-
-.svg {
-  max-width: "150px";
-  max-height: "150px";
-}
-
-
-@media (min-width: 769px) {
-  html {
-    font-size: 16px;
-  }
-
-  svg {
-    max-width: 120px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .imgApp {
-    max-width: 230px;
-  display: none;}
-
-  svg {
-    max-width:  80px;
-  }
-
-  .card{    
-    min-width: auto;
-    max-width: auto;      
-  }
-}
->>>>>>> 9af4716b098268443c2c83f8210dc2b99751a5e3
