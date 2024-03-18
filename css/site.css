@@ -12,30 +12,6 @@ div {}
   ;
 }
 
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-
-  svg {
-    max-width: 120px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .imgApp {
-    max-width: 230px;
-  }
-
-  svg {
-    max-width: 80px;
-  }
-
-
-}
-
 html {
   position: relative;
   min-height: 100%;
@@ -90,4 +66,29 @@ body {
   justify-content: space-evenly;
   border-radius: 15px;
   ;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  svg {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .imgApp {
+    max-width: 230px;
+  }
+
+  svg {
+    max-width: 80px;
+  }
+
+  .avatarcasal {
+    width: 150px;
+  }
 }
