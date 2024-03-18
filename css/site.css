@@ -92,3 +92,18 @@ body {
     width: 150px;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .imgApp {
+    max-width: 230px;
+  }
+
+  svg {
+    max-width: 80px;
+  }
+
+  .avatarcasal {
+    width: 150px;
+  }
+}
