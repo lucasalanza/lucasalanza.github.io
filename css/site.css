@@ -34,7 +34,7 @@ body {
 
 .boxContainerApps {
   display: flex;
-  gap: 1em;
+  gap: 3em;
   flex-wrap: wrap;
 
 }
@@ -43,6 +43,11 @@ body {
   min-width: 220px;
   max-width: 500px;
   border-color: #05222b;
+}
+
+.card .card-pdf {
+  width: 300px;
+
 }
 
 .svg {
@@ -55,6 +60,7 @@ body {
   width: 18rem;
 
 }
+
 
 .card-img-top {
   padding: 5px;
@@ -80,9 +86,6 @@ body {
 
 @media (max-width: 768px) {
 
-  .imgApp {
-    max-width: 230px;
-  }
 
   svg {
     max-width: 80px;
