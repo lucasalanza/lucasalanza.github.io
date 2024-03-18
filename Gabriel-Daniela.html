@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel E Daniela</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/webLanza.styles.css" asp-append-version="true" />
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-T436K2N");
+
+        function scrollToElement(elementId) {
+            var targetElement = document.getElementById(elementId);
+            if (targetElement) {
+                // Calcula a posição do elemento em relação à parte superior da página
+                var targetOffset = targetElement.offsetTop;
+
+                // Configura a animação de rolagem
+                window.scrollTo({
+                    top: targetOffset,
+                    behavior: "smooth", // Use 'auto' ou 'smooth' para uma animação mais suave
+                });
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <section class="mdev-home-container" data-bs-theme="ligth">
+                <div class="boxBackground d-none d-sm-block"></div>
+                <div class="boxContainer py-5">
+                    <div class="container">
+                        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+                            <h1>O casal</h1>
+                            <div class="d-flex flex-row justify-content-center align-items-center gap-3" style="
+    flex-wrap: wrap;
+">
+
+                                <div class="boxAvatar avatarcasal">
+                                    <img id="avatarImg" src="Imgs/GabrielDani/dani.jpg" class="img-fluid"
+                                        alt="Daniela rodrigues" />
+                                </div>
+                                <div class="boxAvatar avatarcasal">
+                                    <img id="avatarImg" src="Imgs/GabrielDani/gabriel.jpg" class="img-fluid"
+                                        alt="Gabriel Lanza" />
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h1>Gabriel E Daniela</h1>
+                                <p class="lead">Histórias de amor existem, e, às vezes, nem nós mesmos acreditamos todo
+                                    o tempo que já estamos juntos. Porém, o brilho intenso e apaixonado dos nossos
+                                    olhares nos fazem lembrar o porquê de chegarmos até aqui sem sentir tanto o tempo
+                                    passar....Vamos nos casar! Estamos preparando tudo com muito carinho para curtirmos
+                                    cada momento com nossos amigos e familiares queridos!
+                                </p>
+                            </div>
+
+                            <!-- <div class="d-flex gap-5 justify-content-center align-items-center h3">
+                                    <a href="https://www.instagram.com/gabriellanza_corretor/" target="_blank"
+                                        class="link-light" title="Instagram"><i class="bi bi-instagram"></i></a>
+
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!--           
+          <div class="boxAnimScrollDown">
+            <button type="button" class="btn btn-outline-secondary" data-goto="boxApps">
+              <img
+                src="images/icons8-double-down.gif"
+                class="img-fluid"
+                alt="Scroll Down"
+              />
+            </button>
+          </div> -->
+            </section>
+
+            <section class="bg-body-tertiary rounded-5 container-fluid py-5" id="boxApps">
+                <div class="">
+                    <div class=" mb-5">
+                        <h2 class="text-center h1 mb-4">Listas de Presente</h2>
+                        <p class="text-center">
+                            Confira Onde estão nossas listas de presente
+                        </p>
+                    </div>
+                    <div class="boxContainerApps boxpresentes ">
+                        <div class="card rounded-5  cardlistaPresentes">
+                            <img src="imgs/GabrielDani/havan.jpg" class="card-img-top rounded-5 " alt="Logo Havan">
+                            <div class="card-body">
+
+                            </div>
+                            <div class="card-footer">
+                                <h5 class="btn btn-outline-secondary">
+                                    <!-- <p class="card-text">Acesse aqui a nossa lista da Havan</p> -->
+                                    <a href="https://lista.havan.com.br/Convidado/ItensListaPresente/734723"
+                                        target="_blank" style="text-decoration: none; color: black;">
+                                        Ver lista
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-5 cardlistaPresentes">
+                            <img src="imgs/GabrielDani/alianças.png" class="card-img-top rounded-5 "
+                                alt="Logo site casamento">
+                            <div class="card-footer">
+                                <h5 class=" btn btn-outline-secondary">
+                                    <a href="https://noivos.casar.com/daniela-e-gabriel-2024-10-26#/presentes"
+                                        target="_blank" style="text-decoration: none; color: black;">
+                                        <!-- <p class="card-text">Acesse aqui a nossa lista da Havan</p> -->
+                                        Ver lista
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card rounded-5  cardlistaPresentes">
+                            <img src="Imgs/GabrielDani/pix.png" class="card-img-top rounded-5 " alt="pix">
+                            <div class="card-body">
+
+                            </div>
+                            <div class="card-footer">
+                                <h5 class="btn btn-outline-secondary">
+                                    <a href="" target="_blank" style="text-decoration: none; color: black;">
+                                        <!-- <p class="card-text">Acesse aqui a nossa lista da Havan</p> -->
+                                        Na duvida Faz um Pix
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <br />
+            <!-- <section class="bg-body-tertiary text-dark" data-bs-theme="light" id="boxApps">
+                <div class="container-fluid">
+                    <div class="mb-5">
+                        <h2 class="text-center h1 mb-4">Sobre nós</h2>
+                    </div>
+
+                </div>
+            </section> -->
+        </main>
+    </div>
+</body>
+
+<footer class="border-top footer text-muted" data-bs-theme="dark">
+    <div class="container">
+        ©Todos os Direitos Reservados &nbsp;&nbsp;&nbsp;&nbsp; &copy; 2024 -
+        LLanza.
+    </div>
+</footer>
+
+</html>

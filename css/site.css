@@ -2,31 +2,31 @@ html {
   font-size: 14px;
 }
 
-div{
+div {}
 
-  
-}
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 
-svg {
-  max-width: 120px;
+  svg {
+    max-width: 120px;
+  }
 }
-}
+
 @media (max-width: 768px) {
 
-.imgApp{
-  max-width: 230px;
+  .imgApp {
+    max-width: 230px;
+  }
+
+  svg {
+    max-width: 80px;
+  }
+
+
 }
 
-svg{  
-  max-width: 80px;
-}
-
-
-}
 html {
   position: relative;
   min-height: 100%;
@@ -37,23 +37,48 @@ body {
 }
 
 .boxAvatar {
-    width: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: solid 5px #333;
-}
-.boxContainerApps {
-    display: flex; 
-    gap: 1em;
- 
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 5px #333;
 }
 
-.card{    
+.avatarcasal {
+  width: 250px;
+}
+
+.boxContainerApps {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+
+}
+
+.card {
   min-width: 220px;
   max-width: 500px;
-  border-color: #05222b;      
+  border-color: #05222b;
 }
- .svg{
-max-width:"150px";
-  max-height:"150px";
+
+.svg {
+  max-width: "150px";
+  max-height: "150px";
+}
+
+.cardlistaPresentes {
+  background-color: whitesmoke;
+  width: 18rem;
+
+}
+
+.card-img-top {
+  padding: 5px;
+  max-width: 512px;
+  max-height: 200px;
+}
+
+.boxpresentes {
+  justify-content: space-evenly;
+  border-radius: 15px;
+  ;
 }
