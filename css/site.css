@@ -36,7 +36,14 @@ body {
   display: flex;
   gap: 3em;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
+.boxContainerApps .card {
+  flex: 1;
+  width: 300px;
+  border-radius: 10%;
+  text-align: center;
 }
 
 .card {
@@ -45,19 +52,16 @@ body {
   border-color: #05222b;
 }
 
-.card .card-pdf {
-  width: 300px;
-
-}
-
 .svg {
   max-width: "150px";
   max-height: "150px";
 }
 
+
 .cardlistaPresentes {
   background-color: whitesmoke;
   width: 18rem;
+  border-radius: 10%;
 
 }
 

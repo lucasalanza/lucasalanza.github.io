@@ -4,15 +4,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Lanza - Full Stack Developer | .NET | Mobile</title>
+  <title>Lucas Lanza - .NET Full Stack Developer | Mobile</title>
+  <!DOCTYPE html>
+  <html lang="en" data-bs-theme="dark">
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="css/site.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="~/webLanza.styles.css" asp-append-version="true" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+    integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
   <script>
     (function (w, d, s, l, i) {
@@ -29,23 +45,29 @@
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", "GTM-T436K2N");
 
-    function scrollToElement(elementId) {
-      var targetElement = document.getElementById(elementId);
-      if (targetElement) {
-        // Calcula a posição do elemento em relação à parte superior da página
-        var targetOffset = targetElement.offsetTop;
 
-        // Configura a animação de rolagem
-        window.scrollTo({
-          top: targetOffset,
-          behavior: "smooth", // Use 'auto' ou 'smooth' para uma animação mais suave
-        });
-      }
+
+    function abrefancy(url) {
+      $.fancybox.open({
+        src: url,
+        type: "iframe",
+        closeBtn: true,
+        maxWidth: 800,
+        maxHeight: 'auto',
+        fitToView: false,
+        autoSize: false,
+        centerOnScroll: true
+      });
     }
+
+    jQuery(document).ready(function ($) {
+
+    });
   </script>
 </head>
 
 <body>
+
   <div class="container">
     <main role="main" class="pb-3">
       <section class="mdev-home-container" data-bs-theme="ligth">
@@ -59,19 +81,13 @@
 
               <div class="text-center">
                 <h1>Lucas Lanza</h1>
-                <p class="lead">Full Stack Developer | .NET | Mobile</p>
+                <p class="lead">.NET Full Stack Developer | Mobile</p>
               </div>
 
               <div class="d-flex gap-5 justify-content-center align-items-center h3">
                 <a href="https://github.com/lucasalanza" target="_blank" class="link-light" title="GitHub"><i
                     class="bi bi-github"></i></a>
-                <!-- <a
-                    href="https://www.instagram.com/lucaslanza.7/"
-                    target="_blank"
-                    class="link-light"
-                    title="Instagram"
-                    ><i class="bi bi-instagram"></i
-                  ></a> -->
+
                 <a href="https://www.linkedin.com/in/lucaslanza7/" target="_blank" class="link-light"
                   title="Linkedin"><i class="bi bi-linkedin"></i></a>
                 <a href="mailto:lucasalanza@gmail.com" class="link-light" title="E-mail"><i
@@ -80,22 +96,13 @@
             </div>
           </div>
         </div>
-        <!--           
-          <div class="boxAnimScrollDown">
-            <button type="button" class="btn btn-light" data-goto="boxApps">
-              <img
-                src="images/icons8-double-down.gif"
-                class="img-fluid"
-                alt="Scroll Down"
-              />
-            </button>
-          </div> -->
+
       </section>
 
-      <section class="bg-body-tertiary text-dark rounded-5" data-bs-theme="light" id="boxApps">
+      <section class="bg-body-tertiary text-dark rounded-4" data-bs-theme="light" id="boxApps">
         <div class="container-fluid py-5">
 
-          <h2 class="text-center h1 mb-4">Desenvolvidos</h2>
+          <h2 class="text-center h1 mb-2">Desenvolvidos</h2>
           <p class="text-center">
             Confira abaixo os itens desenvolvidos e publicados
           </p>
@@ -109,16 +116,13 @@
                 <div class="col-md-6 card-body d-flex flex-column justify-content-between ">
                   <p class="card-text">
                   <h5 class="card-title">Eu Nunca</h5>
-                  A versão eletrônica e envolvente do famoso jogo "Eu Nunca"<br>
-                  projetado para ser jogado por 2 ou mais participantes. Este jogo revelador e descontraído
-                  consiste
-                  em uma série de perguntas em diversas categorias que
-                  os jogadores devem responder honestamente.</p>
+                  A versão eletrônica do famoso jogo "Eu Nunca"<br>
+                  Para ser jogado por 2 ou mais participantes. Este jogo consiste em uma série de perguntas em diversas
+                  categorias que os jogadores devem responder honestamente.</p>
                   <br />
 
-
                   <div class="d-flex align-items-center justify-content-center gap-3">
-                    <div style="width: 150px">
+                    <div style="width: 130px">
                       <a href="https://play.google.com/store/apps/details?id=com.eununca.eununca_app"
                         class="d-block m-0 p-0">
                         <img alt="Disponível no Google Play"
@@ -147,9 +151,9 @@
                   <div class="d-flex align-items-center justify-content-center gap-3">
                     <div style="width: 150px">
 
-                      <a type="button" target="_blank" class="btn btn-outline-secondary"
-                        href="https://lucasalanza.github.io/Gabriel-Daniela.html">
-                        <span class="bi-file-pdf"></span> Ver Página</a>
+                      <button type="button" class="btn btn-outline-secondary"
+                        onclick="abrefancy('https://lucasalanza.github.io/Gabriel-Daniela.html')">
+                        <span class="bi-file-pdf"></span> Ver Página</button>
                     </div>
                   </div>
                 </div>
@@ -158,58 +162,56 @@
           </div>
       </section>
       <br />
-      <section class="bg-body-tertiary text-dark rounded-5 mb-4" data-bs-theme="light" id="boxApps">
+      <section class="bg-body-tertiary text-dark rounded-4 mb-4 p-4" data-bs-theme="light" id="boxApps">
         <div class="container-fluid rounded-5">
           <div class="mb-5">
             <h2 class="text-center h1 mb-4">Contribuições</h2>
           </div>
 
-          <div class="boxContainerApps">
-            <div class="row row-cols-1 row-cols-md-3 g-4 align-items-stretch">
-              <div class="col">
-                <div class="card card-pdf d-flex text-center card rounded-2">
-                  <div class="card-body">
-                    <h5 class="align-items-center mb-4" style="position: relative; margin-top: 0.1em">
-                      Uma breve introdução ao <br> Microsoft Azure <br> Fev/2024
-                    </h5>
-                  </div>
-                  <div class="card-footer text-center d-flex justify-content-center">
-                    <a type="button" target="_blank" class="btn btn-outline-secondary" href="docs/microsoft_Azure.pdf">
-                      <span class="bi-file-pdf"></span> Baixar</a>
-                  </div>
-                </div>
+          <div class="boxContainerApps row row-cols-1 row-cols-md-3 g-2">
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="">
+                  Uma breve introdução ao Microsoft Azure <br> Fev/2024
+                </h5>
               </div>
-              <div class="col">
-                <div class="card d-flex text-center card">
-                  <div class="card-body">
-                    <h5 class="align-items-center mb-4" style="position: relative; margin-top: 0.1em">
-                      Contribuição da Pandemia Para a Adoção do Trabalho Remoto na Área de Tecnologia
-                      <br> Dez/2022
-                    </h5>
-                  </div>
-                  <div class="card-footer text-center d-flex justify-content-center">
-                    <a type="button" target="_blank" class="btn btn-outline-secondary"
-                      href="docs/Artigo-lucaslanza.pdf">
-                      <span class="bi-file-pdf"></span> Baixar</a>
-                  </div>
-                </div>
+              <div class="card-footer text-center">
+                <button type="button" target="_blank" class="btn btn-outline-secondary"
+                  onclick="abrefancy('docs/microsoft_Azure.pdf')">
+                  <span class="bi-file-pdf"></span> Visualizar
+                </button>
               </div>
-              <div class="col">
-                <div class="card d-flex text-center card">
-                  <div class="card-body">
-                    <h5 class="align-items-center mb-4" style="position: relative; margin-top: 0.1em">
-                      O Uso da Criptografia Para Proteção dos Dados<br> Dez/2017
-                    </h5>
-                  </div>
-                  <div class="card-footer text-center d-flex justify-content-center">
-                    <a type="button" target="_blank" class="btn btn-outline-secondary"
-                      href="docs/Cripto_para_protecao.pdf">
-                      <span class="bi-file-pdf"></span> Baixar</a>
-                  </div>
-                </div>
+            </div>
+            <div class="card ">
+              <div class="card-body">
+                <h5 class="">
+                  Contribuição da Pandemia Para Adoção do Trabalho Remoto na Tecnologia
+                  <br> Dez/2022
+                </h5>
+              </div>
+              <div class="card-footer text-center">
+                <button type="button" target="_blank" class="btn btn-outline-secondary"
+                  onclick="abrefancy('docs/Artigo-lucaslanza.pdf')">
+                  <span class="bi-file-pdf"></span> Visualizar
+                </button>
+              </div>
+            </div>
+            <div class="card ">
+              <div class="card-body">
+                <h5 class="">
+                  O Uso da Criptografia Para Proteção dos Dados<br> Dez/2017
+                </h5>
+              </div>
+              <div class="card-footer text-center ">
+                <button type="button" target="_blank" class="btn btn-outline-secondary"
+                  onclick="abrefancy('docs/Cripto_para_protecao.pdf')">
+                  <span class="bi-file-pdf"></span> Visualizar
+                </button>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
