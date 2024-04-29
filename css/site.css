@@ -21,6 +21,16 @@ body {
   margin-bottom: 60px;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #6c757d;
+  /* cor do texto do footer */
+  padding: 10px 0;
+  /* espaço interno do footer */
+}
+
 .boxAvatar {
   width: 200px;
   border-radius: 50%;
