@@ -34,6 +34,9 @@
 
 
   <script>
+
+
+
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -166,57 +169,26 @@
       </section>
       <br />
       <section class="bg-body-tertiary text-dark rounded-4 mb-4 p-4" data-bs-theme="light" id="boxApps">
-        <div class="container-fluid rounded-5">
-          <div class="mb-5">
-            <h2 class="text-center h1 mb-4">Contribuições</h2>
-          </div>
-
-          <div class="boxContainerApps row row-cols-1 row-cols-md-3 g-2">
-
-            <div class="card">
-              <div class="card-body">
-                <h5 class="">
-                  Uma breve introdução ao Microsoft Azure <br> Fev/2024
-                </h5>
-              </div>
-              <div class="card-footer text-center">
-                <button type="button" target="_blank" class="btn btn-outline-secondary"
-                  onclick="abrefancy('docs/microsoft_Azure.pdf')">
-                  <span class="bi-file-pdf"></span> Visualizar
-                </button>
-              </div>
-            </div>
-            <div class="card ">
-              <div class="card-body">
-                <h5 class="">
-                  Contribuição da Pandemia Para Adoção do Trabalho Remoto na Tecnologia
-                  <br> Dez/2022
-                </h5>
-              </div>
-              <div class="card-footer text-center">
-                <button type="button" target="_blank" class="btn btn-outline-secondary"
-                  onclick="abrefancy('docs/Artigo-lucaslanza.pdf')">
-                  <span class="bi-file-pdf"></span> Visualizar
-                </button>
-              </div>
-            </div>
-            <div class="card ">
-              <div class="card-body">
-                <h5 class="">
-                  O Uso da Criptografia Para Proteção dos Dados<br> Dez/2017
-                </h5>
-              </div>
-              <div class="card-footer text-center ">
-                <button type="button" target="_blank" class="btn btn-outline-secondary"
-                  onclick="abrefancy('docs/Cripto_para_protecao.pdf')">
-                  <span class="bi-file-pdf"></span> Visualizar
-                </button>
-              </div>
-            </div>
-          </div>
-
+        <div class="container-fluid rounded-5" id="contrib-container">
+          <div class="text-center" id="loading-contrib">Carregando contribuições...</div>
         </div>
+
+        <script>
+          const loadingContrib = document.getElementById('loading-contrib');
+          const contribContainer = document.getElementById('contrib-container');
+
+          fetch('contribuicoes.html')
+            .then(response => response.text())
+            .then(html => {
+              contribContainer.innerHTML = html;
+              loadingContrib.style.display = 'none'; // Esconde o indicador de carregamento
+            })
+            .catch(error => {
+              contribContainer.innerHTML = '<p>Erro ao carregar contribuições.</p>';
+            });
+        </script>
       </section>
+
 
     </main>
   </div>
