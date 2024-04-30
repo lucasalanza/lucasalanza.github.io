@@ -1,9 +1,3 @@
-html {
-  font-size: 14px;
-}
-
-div {}
-
 .allison-regular {
   font-family: "Allison", cursive;
   font-weight: 400;
@@ -13,13 +7,18 @@ div {}
 }
 
 html {
+  font-size: 14px;
   position: relative;
   min-height: 100%;
-  background-color: #343a40;
 }
 
 body {
+  background-color: #343a40 !important;
   margin-bottom: 60px;
+}
+
+.text-white {
+  color: white;
 }
 
 .footer {
