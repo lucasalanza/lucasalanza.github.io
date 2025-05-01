@@ -130,8 +130,12 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: false,
+    width: '90%',
+    height: '90vh'
   });
 
   /**
