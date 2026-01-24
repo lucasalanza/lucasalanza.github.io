@@ -1,307 +1,308 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<!--
+  Política de Privacidade – Eu Nunca
+  Publicar em https://lucasalanza.github.io/EuNunca-Privacy (ex.: como index.html no repo EuNunca-Privacy).
+  Layout alinhado ao aplicativo (Material 3 / Flutter).
+-->
 <html lang="pt-BR">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Política de Privacidade – Eu Nunca</title>
-  <meta name="description"
-    content="Leia nossa Política de Privacidade. O aplicativo Eu Nunca não coleta informações pessoais dos usuários." />
-  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Política de privacidade do app Eu Nunca. Estrutura do app, funcionalidades e tratamento de dados." />
   <meta name="author" content="Lucas Lanza" />
-
-  <!-- Open Graph Meta Tags for better social sharing -->
   <meta property="og:title" content="Política de Privacidade – Eu Nunca" />
-  <meta property="og:description" content="Conheça como protegemos sua privacidade no aplicativo Eu Nunca" />
+  <meta property="og:description" content="Política de privacidade e estrutura do aplicativo Eu Nunca" />
   <meta property="og:type" content="website" />
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
-
-  <!-- Structured Data for SEO -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Política de Privacidade - Eu Nunca",
-    "description": "Política de privacidade do aplicativo Eu Nunca",
-    "publisher": {
-      "@type": "Person",
-      "name": "Lucas Lanza"
-    },
-    "dateModified": "2025-07-21"
-  }
+  { "@context": "https://schema.org", "@type": "WebPage", "name": "Política de Privacidade - Eu Nunca", "publisher": { "@type": "Person", "name": "Lucas Lanza" }, "dateModified": "2026-01-15" }
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --surface: #fafafa;
+      --on-surface: #1f1f1f;
+      --primary: #616161;
+      --primary-container: #e0e0e0;
+      --on-primary-container: #1f1f1f;
+      --outline: rgba(0,0,0,.12);
+      --card-bg: #ffffff;
+      --footer-bg: #eeeeee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--surface);
+      color: var(--on-surface);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    .app-bar {
+      background: var(--surface);
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--outline);
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .scroll {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero {
+      background: var(--primary-container);
+      border: 2px solid rgba(97,97,97,.3);
+      border-radius: 24px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(97,97,97,.2);
+    }
+    .hero .icon { font-size: 56px; color: var(--primary); margin-bottom: 16px; }
+    .hero h2 { margin: 0 0 8px; font-size: 1.15rem; color: var(--on-primary-container); }
+    .hero p { margin: 0; color: var(--on-primary-container); opacity: .9; font-size: 0.95rem; }
+    .section {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 16px;
+      margin-top: 16px;
+      border: 2px solid rgba(0,0,0,.08);
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    }
+    .section.blue { border-color: rgba(33,150,243,.4); box-shadow: 0 2px 8px rgba(33,150,243,.12); }
+    .section.green { border-color: rgba(76,175,80,.4); box-shadow: 0 2px 8px rgba(76,175,80,.12); }
+    .section.orange { border-color: rgba(255,152,0,.4); box-shadow: 0 2px 8px rgba(255,152,0,.12); }
+    .section.purple { border-color: rgba(103,58,183,.4); box-shadow: 0 2px 8px rgba(103,58,183,.12); }
+    .section.teal { border-color: rgba(0,150,136,.4); box-shadow: 0 2px 8px rgba(0,150,136,.12); }
+    .section.indigo { border-color: rgba(63,81,181,.4); box-shadow: 0 2px 8px rgba(63,81,181,.12); }
+    .section.grey { border-color: rgba(158,158,158,.4); box-shadow: 0 2px 8px rgba(158,158,158,.12); }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .section-header .icon-wrap {
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 12px;
+      font-size: 24px;
+    }
+    .section.blue .icon-wrap { background: rgba(33,150,243,.15); color: #1976d2; }
+    .section.green .icon-wrap { background: rgba(76,175,80,.15); color: #388e3c; }
+    .section.orange .icon-wrap { background: rgba(255,152,0,.15); color: #f57c00; }
+    .section.purple .icon-wrap { background: rgba(103,58,183,.15); color: #5e35b1; }
+    .section.teal .icon-wrap { background: rgba(0,150,136,.15); color: #00796b; }
+    .section.indigo .icon-wrap { background: rgba(63,81,181,.15); color: #3949ab; }
+    .section.grey .icon-wrap { background: rgba(158,158,158,.15); color: #616161; }
+    .section-header h3 { margin: 0; font-size: 1rem; font-weight: 700; flex: 1; }
+    .section.blue .section-header h3 { color: rgba(33,150,243,.95); }
+    .section.green .section-header h3 { color: rgba(76,175,80,.95); }
+    .section.orange .section-header h3 { color: rgba(255,152,0,.95); }
+    .section.purple .section-header h3 { color: rgba(103,58,183,.95); }
+    .section.teal .section-header h3 { color: rgba(0,150,136,.95); }
+    .section.indigo .section-header h3 { color: rgba(63,81,181,.95); }
+    .section.grey .section-header h3 { color: #616161; }
+    .section p { margin: 0 0 12px; font-size: 0.9375rem; }
+    .section p:last-child { margin-bottom: 0; }
+    .section ul { margin: 0 0 12px; padding-left: 1.2em; }
+    .section li { margin-bottom: 6px; }
+    .bullet { display: flex; gap: 8px; margin-bottom: 6px; align-items: flex-start; }
+    .bullet::before { content: '✓'; color: var(--primary); font-weight: 600; }
+    .highlight {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 12px; border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .highlight.green { background: rgba(76,175,80,.1); border: 1px solid rgba(76,175,80,.3); }
+    .highlight.info { background: rgba(33,150,243,.08); border: 1px solid rgba(33,150,243,.25); }
+    .highlight.warn { background: rgba(255,152,0,.12); border: 1px solid rgba(255,152,0,.4); }
+    .mini-row { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 16px; margin-top: 16px; }
+    .mini { text-align: center; }
+    .mini .ico { font-size: 32px; margin-bottom: 4px; }
+    .mini .blue { color: #1976d2; }
+    .mini .green { color: #388e3c; }
+    .mini .teal { color: #00796b; }
+    .resumo {
+      background: #f5f5f5;
+      border: 1px solid var(--outline);
+      border-radius: 16px;
+      padding: 16px;
+      margin-top: 24px;
+    }
+    .resumo h3 { margin: 0 0 12px; font-size: 1rem; display: flex; align-items: center; gap: 8px; }
+    .resumo ul { list-style: none; padding: 0; margin: 0; }
+    .resumo li { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+    .resumo li::before { content: '✓'; color: #388e3c; font-weight: 700; }
+    .contato {
+      display: flex; align-items: center; gap: 16px;
+      padding: 16px; background: var(--card-bg);
+      border-radius: 16px; margin-top: 16px;
+      border: 1px solid var(--outline);
+      text-decoration: none; color: inherit;
+    }
+    .contato:hover { background: #f5f5f5; }
+    .contato .icon-wrap { width: 44px; height: 44px; background: rgba(97,97,97,.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .contato .label { font-weight: 700; font-size: 0.9375rem; }
+    .contato .email { font-size: 0.875rem; color: #616161; }
+    .footer {
+      background: var(--footer-bg);
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 24px;
+      text-align: center;
+    }
+    .footer .heart { font-size: 28px; color: #d32f2f; }
+    .footer .att { font-size: 0.875rem; color: #616161; margin-top: 4px; }
+    .footer .copy { font-size: 0.8rem; color: #757575; margin-top: 12px; }
+    .date-bar {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px; background: rgba(97,97,97,.08);
+      border-radius: 12px;
+      margin-top: 16px;
+    }
+    .date-bar strong { font-size: 0.875rem; }
+  </style>
 </head>
-
-<body class="container-fluid">
-  <!-- Header with breadcrumb navigation -->
-  <header class="page-title" data-aos="fade">
-    <div class="container">
-      <h1>Política de Privacidade – Eu Nunca</h1>
-    </div>
-  </header>
-
-  <main class="container my-5">
-
-
-    <!-- Privacy commitment banner -->
-    <div class="hero-section bg-light p-4 rounded mb-5 text-center">
-      <i class="bi bi-shield-check text-success display-1 mb-3" aria-hidden="true"></i>
-      <h2 class="h3 mb-3">Seu direito à privacidade é nossa prioridade</h2>
-      <p class="lead"><strong>Eu Nunca</strong> foi desenvolvido com foco total na proteção de seus dados pessoais.
-      </p>
+<body>
+  <header class="app-bar">Política de Privacidade</header>
+  <main class="scroll">
+    <div class="hero">
+      <div class="icon" aria-hidden="true">🛡️</div>
+      <h2>Seu direito à privacidade é nossa prioridade</h2>
+      <p>O Eu Nunca foi desenvolvido com foco na proteção dos seus dados.</p>
     </div>
 
-    <!-- Main content sections -->
-    <div class="row">
-      <div class="col-lg-8">
-        <section class="privacy-section mb-5">
-          <div class="card border-0 shadow-sm">
-            <div class="card-header bg-primary text-white">
-              <h2 class="card-title mb-0">
-                <i class="bi bi-database-slash me-2" aria-hidden="true"></i>
-                1. Informações Coletadas
-              </h2>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                <strong>O aplicativo <strong>Eu Nunca</strong> não coleta nenhum tipo de informação
-                  pessoal</strong> do usuário,
-                incluindo, mas não se limitando a:
-              </p>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-x-circle text-danger me-2" aria-hidden="true"></i>Nome completo</li>
-                    <li><i class="bi bi-x-circle text-danger me-2" aria-hidden="true"></i>Endereço de e-mail</li>
-                    <li><i class="bi bi-x-circle text-danger me-2" aria-hidden="true"></i>Número de telefone</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-x-circle text-danger me-2" aria-hidden="true"></i>Localização geográfica</li>
-                    <li><i class="bi bi-x-circle text-danger me-2" aria-hidden="true"></i>Dados de pagamento</li>
-                    <li><i class="bi bi-x-circle text-danger me-2" aria-hidden="true"></i>Dados de navegação</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="privacy-section mb-5">
-          <div class="card border-0 shadow-sm">
-            <div class="card-header bg-success text-white">
-              <h2 class="card-title mb-0">
-                <i class="bi bi-shield-check me-2" aria-hidden="true"></i>
-                2. Uso de Informações
-              </h2>
-            </div>
-            <div class="card-body">
-              <div class="alert alert-success" role="alert">
-                <i class="bi bi-check-circle-fill me-2" aria-hidden="true"></i>
-                <strong>Zero coleta = Zero uso</strong>
-              </div>
-              <p>
-                Como não coletamos informações pessoais, <strong>não utilizamos, compartilhamos ou vendemos</strong>
-                dados do usuário a terceiros. <strong>Eu Nunca</strong> respeita a privacidade dos usuários e não
-                realiza
-                qualquer forma de análise de comportamento ou rastreamento de atividades.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="privacy-section mb-5">
-          <div class="card border-0 shadow-sm">
-            <div class="card-header bg-info text-white">
-              <h2 class="card-title mb-0">
-                <i class="bi bi-people-fill me-2" aria-hidden="true"></i>
-                3. Compartilhamento de Informações
-              </h2>
-            </div>
-            <div class="card-body">
-              <p>
-                <strong>Não compartilhamos informações pessoais</strong> dos usuários com terceiros.
-                Nosso aplicativo é desenvolvido com o compromisso de proteger a privacidade e a
-                confidencialidade dos dados dos usuários.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="privacy-section mb-5">
-          <div class="card border-0 shadow-sm">
-            <div class="card-header bg-warning text-dark">
-              <h2 class="card-title mb-0">
-                <i class="bi bi-lock-fill me-2" aria-hidden="true"></i>
-                4. Segurança
-              </h2>
-            </div>
-            <div class="card-body">
-              <p>
-                <strong>Eu Nunca</strong> implementa medidas de segurança para proteger os dados dos usuários
-                contra
-                acesso não autorizado, divulgação, alteração e destruição. No entanto, dado que
-                <strong>não coletamos informações pessoais</strong>, o risco de violação de dados é
-                praticamente inexistente.
-              </p>
-              <div class="row mt-3">
-                <div class="col-md-4 text-center">
-                  <i class="bi bi-shield-lock display-4 text-primary" aria-hidden="true"></i>
-                  <p class="mt-2"><strong>Criptografia</strong></p>
-                </div>
-                <div class="col-md-4 text-center">
-                  <i class="bi bi-server display-4 text-success" aria-hidden="true"></i>
-                  <p class="mt-2"><strong>Servidores Seguros</strong></p>
-                </div>
-                <div class="col-md-4 text-center">
-                  <i class="bi bi-eye-slash display-4 text-info" aria-hidden="true"></i>
-                  <p class="mt-2"><strong>Zero Rastreamento</strong></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="privacy-section mb-5">
-          <div class="card border-0 shadow-sm">
-            <div class="card-header bg-secondary text-white">
-              <h2 class="card-title mb-0">
-                <i class="bi bi-headset me-2" aria-hidden="true"></i>
-                5. Informações para Fins de Suporte
-              </h2>
-            </div>
-            <div class="card-body">
-              <p>
-                Caso os usuários entrem em contato com nosso suporte técnico, poderemos coletar informações
-                fornecidas voluntariamente para ajudar na resolução de problemas específicos. Essas informações são
-                utilizadas exclusivamente para a finalidade de oferecer suporte e <strong>não são armazenadas</strong>
-                após a resolução do problema.
-              </p>
-              <div class="alert alert-light border-start border-4 border-primary">
-                <i class="bi bi-info-circle me-2 text-primary" aria-hidden="true"></i>
-                <strong>Nota:</strong> Qualquer informação compartilhada no suporte é processada apenas para resolver
-                sua solicitação.
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="privacy-section mb-5">
-          <div class="card border-0 shadow-sm">
-            <div class="card-header bg-dark text-white">
-              <h2 class="card-title mb-0">
-                <i class="bi bi-arrow-repeat me-2" aria-hidden="true"></i>
-                6. Alterações na Política de Privacidade
-              </h2>
-            </div>
-            <div class="card-body">
-              <p>
-                <strong>Eu Nunca</strong> reserva-se o direito de modificar esta Política de Privacidade a qualquer
-                momento.
-                As alterações serão notificadas aos usuários por meio de:
-              </p>
-              <ul></ul>
-              <li><i class="bi bi-app-indicator me-2 text-primary" aria-hidden="true"></i>Atualizações no aplicativo
-              </li>
-              <li><i class="bi bi-envelope me-2 text-primary" aria-hidden="true"></i>Notificações por e-mail (quando
-                aplicável)</li>
-              <li><i class="bi bi-globe me-2 text-primary" aria-hidden="true"></i>Avisos no site oficial</li>
-              </ul>
-              <div class="alert alert-warning" role="alert">
-                <i class="bi bi-exclamation-triangle-fill me-2" aria-hidden="true"></i>
-                <strong>Importante:</strong> Ao utilizar o <strong>Eu Nunca</strong>, os usuários concordam com os
-                termos desta
-                Política de Privacidade.
-              </div>
-            </div>
-          </div>
-        </section>
+    <section class="section purple">
+      <div class="section-header">
+        <div class="icon-wrap">🏗️</div>
+        <h3>Estrutura do app (portfolio)</h3>
       </div>
+      <p>O Eu Nunca é um projeto em Flutter (Dart), com arquitetura em camadas:</p>
+      <ul>
+        <li><strong>Frontend:</strong> Flutter, Material 3, Provider, Lottie</li>
+        <li><strong>Backend e dados:</strong> Firebase (Firestore, Storage), Hive (cache local)</li>
+        <li><strong>Organização:</strong> telas (screens), componentes, controllers, models, repositórios, serviços, tema</li>
+        <li><strong>Outros:</strong> Google Mobile Ads, connectivity_plus, in_app_review, url_launcher</li>
+      </ul>
+    </section>
 
-      <!-- Sidebar with quick info and contact -->
-      <div class="col-lg-4">
-        <div class="sticky-top" style="top: 20px;">
-          <!-- Quick summary -->
-          <div class="card border-0 shadow-sm mb-4">
-            <div class="card-header bg-light">
-              <h3 class="card-title h5 mb-0">
-                <i class="bi bi-list-check me-2 text-primary" aria-hidden="true"></i>
-                Resumo Rápido
-              </h3>
-            </div>
-            <div class="card-body">
-              <ul class="list-unstyled">
-                <li class="mb-2">
-                  <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-                  Não coletamos dados pessoais
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-                  Não compartilhamos informações
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-                  Não fazemos rastreamento
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-                  Suporte apenas quando solicitado
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Contact information -->
-          <div class="card border-0 shadow-sm">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title h5 mb-0">
-                <i class="bi bi-envelope me-2" aria-hidden="true"></i>
-                Contato
-              </h3>
-            </div>
-            <div class="card-body text-center">
-              <p>Para dúvidas ou esclarecimentos sobre esta política:</p>
-              <a href="mailto:lucasalanza@gmail.com" class="btn btn-outline-primary">
-                <i class="bi bi-envelope me-2" aria-hidden="true"></i>
-                lucasalanza@gmail.com
-              </a>
-            </div>
-          </div>
-        </div>
+    <section class="section teal">
+      <div class="section-header">
+        <div class="icon-wrap">✨</div>
+        <h3>Funcionalidades</h3>
       </div>
+      <ul>
+        <li><strong>Ver perguntas de outros usuários</strong> — as perguntas aprovadas aparecem no jogo para todos.</li>
+        <li><strong>Enviar suas próprias perguntas</strong> — são analisadas por um administrador antes de publicar.</li>
+        <li><strong>Categorias novas</strong> — o administrador pode criar e gerenciar categorias.</li>
+        <li><strong>Contato</strong> — dúvidas ou sugestões: <a href="mailto:lucasalanza@gmail.com">lucasalanza@gmail.com</a>.</li>
+      </ul>
+    </section>
+
+    <section class="section blue">
+      <div class="section-header">
+        <div class="icon-wrap">📦</div>
+        <h3>1. Informações Coletadas</h3>
+      </div>
+      <p>Utilizamos apenas:</p>
+      <ul>
+        <li><strong>Identificador do aparelho</strong> — para vincular suas perguntas e votos ao seu perfil.</li>
+        <li><strong>Nome e data de nascimento (opcionais)</strong> — informados por você no perfil.</li>
+        <li><strong>Perguntas que você envia</strong> — armazenadas para moderação e exibição no jogo.</li>
+      </ul>
+      <p>Não coletamos e-mail, telefone, localização, dados de pagamento ou de navegação para fins de rastreamento.</p>
+    </section>
+
+    <section class="section green">
+      <div class="section-header">
+        <div class="icon-wrap">✓</div>
+        <h3>2. Uso de Informações</h3>
+      </div>
+      <div class="highlight green">
+        <span>✓</span>
+        <p style="margin:0">Os dados são usados apenas para o funcionamento do app: exibir perguntas, filtrar categorias por idade e gerenciar votos.</p>
+      </div>
+      <p>Não utilizamos, compartilhamos ou vendemos dados a terceiros. Não realizamos análise de comportamento ou rastreamento.</p>
+    </section>
+
+    <section class="section blue">
+      <div class="section-header">
+        <div class="icon-wrap">👥</div>
+        <h3>3. Compartilhamento</h3>
+      </div>
+      <p>Não compartilhamos informações pessoais com terceiros. O app é desenvolvido com compromisso de proteger a privacidade e a confidencialidade dos dados.</p>
+    </section>
+
+    <section class="section orange">
+      <div class="section-header">
+        <div class="icon-wrap">🔒</div>
+        <h3>4. Segurança</h3>
+      </div>
+      <p>Implementamos medidas de segurança para proteger os dados. Eles são armazenados em serviços seguros (Firebase).</p>
+      <div class="mini-row">
+        <div class="mini"><div class="ico mini blue">🔐</div><div><strong>Criptografia</strong></div></div>
+        <div class="mini"><div class="ico mini green">☁️</div><div><strong>Servidores seguros</strong></div></div>
+        <div class="mini"><div class="ico mini teal">👁‍🗨</div><div><strong>Sem rastreamento</strong></div></div>
+      </div>
+    </section>
+
+    <section class="section grey">
+      <div class="section-header">
+        <div class="icon-wrap">🎧</div>
+        <h3>5. Suporte</h3>
+      </div>
+      <p>Em caso de contato, podemos usar as informações que você fornecer voluntariamente apenas para resolver seu problema. Elas não são armazenadas após a resolução.</p>
+      <div class="highlight info">
+        <span>ℹ️</span>
+        <p style="margin:0"><strong>Nota:</strong> Qualquer informação compartilhada no suporte é processada apenas para atender sua solicitação.</p>
+      </div>
+    </section>
+
+    <section class="section indigo">
+      <div class="section-header">
+        <div class="icon-wrap">🔄</div>
+        <h3>6. Alterações na Política</h3>
+      </div>
+      <p>O Eu Nunca pode atualizar esta política a qualquer momento. As alterações serão comunicadas por atualizações no app, e-mail (quando aplicável) ou avisos no site.</p>
+      <div class="highlight warn">
+        <span>⚠️</span>
+        <p style="margin:0"><strong>Importante:</strong> Ao utilizar o Eu Nunca, você concorda com os termos desta Política de Privacidade.</p>
+      </div>
+    </section>
+
+    <div class="resumo">
+      <h3>📋 Resumo</h3>
+      <ul>
+        <li>Não vendemos nem compartilhamos seus dados</li>
+        <li>Dados usados só para o funcionamento do app</li>
+        <li>Sem rastreamento ou análise de comportamento</li>
+        <li>Suporte apenas quando você solicitar</li>
+      </ul>
     </div>
 
-    <!-- Footer message -->
-    <div class="text-center mt-5 p-4 bg-light rounded">
-      <h3 class="h4">Obrigado por escolher o <strong>Eu Nunca</strong>!</h3>
-      <p class="mb-0">Att. <strong>Lucas Lanza</strong></p>
-    </div>
-    <!-- Last update info with visual emphasis -->
-    <div class="alert alert-info d-flex align-items-center mb-4" role="alert">
-      <i class="bi bi-info-circle-fill me-2" aria-hidden="true"></i>
+    <a class="contato" href="mailto:lucasalanza@gmail.com">
+      <div class="icon-wrap">✉️</div>
       <div>
-        <strong>Última atualização:</strong> 21 de julho de 2025
+        <div class="label">Contato</div>
+        <div class="email">Dúvidas sobre esta política: lucasalanza@gmail.com</div>
       </div>
+      <span style="margin-left:auto">→</span>
+    </a>
+
+    <div class="footer">
+      <div class="heart">❤️</div>
+      <p style="margin:8px 0 0"><strong>Obrigado por escolher o Eu Nunca!</strong></p>
+      <p class="att">Att. Lucas Lanza</p>
+      <p class="copy">© 2026 LLanza. Todos os direitos reservados.</p>
+    </div>
+
+    <div class="date-bar">
+      <span>📅</span>
+      <strong>Última atualização: janeiro de 2026</strong>
     </div>
   </main>
-
-  <!-- Footer -->
-  <footer class="border-top footer text-muted mt-5">
-    <div class="container text-center py-3">
-      <p class="mb-0">©Todos os Direitos Reservados &copy; 2025 - LLanza.</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-
-
 </body>
-
 </html>
