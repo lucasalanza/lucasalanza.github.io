@@ -9,11 +9,11 @@
 :root {
   --background-color: #ffffff;
   /* Background color for the entire website, including individual sections */
-  --default-color: #272829;
+  --default-color: #33313f;
   /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #050d18;
+  --heading-color: #100e1c;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd;
+  --accent-color: #6c5ce7;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -27,9 +27,9 @@
   /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff;
   /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #040b14;
+  --nav-mobile-background-color: #0e0c1a;
   /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #040b14;
+  --nav-dropdown-background-color: #0e0c1a;
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #a8a9b4;
   /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -40,16 +40,81 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4fafd;
+  --background-color: #f7f5fd;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #040b14;
+  --background-color: #0e0c1a;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #151f2b;
+  --surface-color: #1a1730;
   --contrast-color: #ffffff;
+}
+
+/* Dark theme (site-wide toggle, independent from the section-level presets above).
+   The header/hero sections keep using .dark-background regardless of the toggle,
+   so the brand look stays consistent in both themes. */
+:root[data-theme="dark"] {
+  --background-color: #0e0c1a;
+  --default-color: #c9c7d6;
+  --heading-color: #ffffff;
+  --surface-color: #171428;
+}
+
+:root[data-theme="dark"] .light-background {
+  --background-color: #171428;
+  --surface-color: #201c38;
+}
+
+/* Theme + language switchers */
+.header .site-controls {
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.header .lang-switch {
+  display: inline-flex;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.header .lang-switch button {
+  background: none;
+  border: none;
+  color: var(--default-color);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header .lang-switch button.active,
+.header .lang-switch button:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.header .theme-toggle {
+  background: none;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header .theme-toggle:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
 }
 
 /* Smooth scroll */
@@ -888,6 +953,59 @@ section,
 
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
+}
+
+/* Placeholder thumbnail for portfolio items without a screenshot yet */
+.portfolio .portfolio-content .portfolio-thumb-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--accent-color), var(--heading-color));
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-content .portfolio-thumb-placeholder i {
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.portfolio .portfolio-content:hover .portfolio-thumb-placeholder {
+  transform: scale(1.1);
+}
+
+/* Brand wordmark thumbnails — real brand colors of each live client site,
+   used in place of a screenshot until one is available. */
+.portfolio .portfolio-content .portfolio-thumb-placeholder.brand-lumuscare {
+  background: linear-gradient(135deg, #0a1e33, #027cc4 65%, #4f9855);
+}
+
+.portfolio .portfolio-content .portfolio-thumb-placeholder.brand-revestidos {
+  background: linear-gradient(135deg, #5e2230, #7a2e3c 60%, #c9a227);
+}
+
+.portfolio .portfolio-content .portfolio-thumb-placeholder .brand-wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.portfolio .portfolio-content .portfolio-thumb-placeholder .brand-wordmark i {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.portfolio .portfolio-content .portfolio-thumb-placeholder .brand-wordmark span {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  letter-spacing: 0.3px;
 }
 
 /*--------------------------------------------------------------

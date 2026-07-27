@@ -4,6 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Set theme before first paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem("site_theme");
+      var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
   <title>Lucas Lanza | .NET Software Engineer & Full Stack Developer</title>
 
   <!-- SEO Meta Tags -->
@@ -18,15 +28,15 @@
   <meta property="og:title" content="Lucas Lanza | .NET Software Engineer">
   <meta property="og:description"
     content="Full-stack developer focused on .NET, Flutter, and system integration. Check out my portfolio and resume.">
-  <meta property="og:image" content="https://lucaslanza.github.io/assets/img/my-profile-img.jpg">
-  <meta property="og:url" content="https://lucaslanza.github.io/">
+  <meta property="og:image" content="https://lucasalanza.github.io/assets/img/my-profile-img.jpg">
+  <meta property="og:url" content="https://lucasalanza.github.io/">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lucas Lanza | .NET Software Engineer">
   <meta name="twitter:description"
     content="Full-stack developer focused on .NET, Flutter, and system integration. Check out my portfolio and resume.">
-  <meta name="twitter:image" content="https://lucaslanza.github.io/assets/img/my-profile-img.jpg">
+  <meta name="twitter:image" content="https://lucasalanza.github.io/assets/img/my-profile-img.jpg">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
@@ -75,12 +85,22 @@
           class="bi bi-linkedin"></i></a>
     </div>
 
+    <div class="site-controls d-flex align-items-center justify-content-center">
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button type="button" data-lang="pt" aria-label="Português">PT</button>
+        <button type="button" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <button type="button" class="theme-toggle" aria-label="Toggle light/dark theme">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+    </div>
+
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav.home">Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav.about">About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav.resume">Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav.portfolio">Portfolio</span></a></li>
       </ul>
     </nav>
 
@@ -95,7 +115,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Lucas Lanza</h2>
-        <p>I'm a <span class="typed" data-typed-items=".NET Developer, System Analyst, Brazilian, Traveler">.NET
+        <p><span data-i18n="hero.prefix">I'm a</span> <span class="typed" data-typed-items=".NET Developer, System Analyst, Brazilian, Traveler">.NET
             Software Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
             class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
@@ -107,17 +127,14 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>
+        <h2 data-i18n="about.heading">About Me</h2>
+        <p data-i18n="about.p1">
           I am a Software Engineer currently in the process of relocating to the US, with over four years of experience
           in full-stack development, specializing in .NET, Flutter, and API integrations. Passionate about
           problem-solving and system optimization, I’ve worked on both legacy and modern systems—enhancing performance,
           automating processes, and improving user experience.
         </p>
-        <!-- <p>
-          At Unoeste, I develop internal and external systems, including a parking payment module (processing R$5K/month), a secure and anonymous harassment reporting tool, and a centralized platform for internship documents used by over 5,000 students. At Cobmais, I resolved 2,000+ Tier 2 escalated tickets by streamlining bug fixes and optimizing database queries. I also led the integration of 15+ clients with our APIs and web services, significantly reducing downtime, and created a product training course using a STAGE environment, with over 100 enrolled professionals. My contributions helped reduce validation times by 70%, eliminate manual processes, and improve system reliability.
-        </p> -->
-        <p>
+        <p data-i18n="about.p2">
           Beyond my professional work, I’m always exploring new technologies like cloud computing and automation.
         </p>
       </div><!-- End Section Title -->
@@ -129,19 +146,16 @@
             <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>.Net Software Engineer.</h2>
-            <p class="fst-italic py-3">
+            <h2 data-i18n="about.subheading">.Net Software Engineer.</h2>
 
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>11 May 1995</span></li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+55 18 98110 2937</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Presidente Prudente/SP,
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.birthdayLabel">Birthday:</strong> <span data-i18n="about.birthdayValue">11 May 1995</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.phoneLabel">Phone:</strong> <span>+55 18 98110 2937</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.cityLabel">City:</strong> <span data-i18n="about.cityValue">Presidente Prudente/SP,
                       BRAZIL</span></li>
-                  <!-- Link para o LinkedIn -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.linkedinLabel">LinkedIn:</strong>
                     <a href="https://www.linkedin.com/in/lucasalanza/" target="_blank"
                       class="btn btn-outline-primary btn-sm">Lucas Lanza</a>
                   </li>
@@ -149,18 +163,13 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>lucasalanza@gmail.com</span>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.emailLabel">Email:</strong> <span>lucasalanza@gmail.com</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Move Abroad:</strong> <span>Available for
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.moveAbroadLabel">Move Abroad:</strong> <span data-i18n="about.moveAbroadValue">Available for
                       relocation</span></li>
                 </ul>
               </div>
             </div>
-            <!-- <p class="py-3">
-              colocar uma frase aqui sobre o que sou e o que faço
-            </p> -->
           </div>
         </div>
 
@@ -170,8 +179,8 @@
     <section id="skills" class="skills section light-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>
+        <h2 data-i18n="skills.heading">Skills</h2>
+        <p data-i18n="skills.description">
           I explore diverse technologies in challenging and impactful projects, always seeking continuous learning and
           professional growth. Below are some of the main tools and technologies I’ve worked with in real-world
           applications:
@@ -187,8 +196,8 @@
               <!-- Skill: .NET -->
               <div class="col-md-6">
                 <div class="skill-item">
-                  <h4><i class="bi bi-pc-display-horizontal"></i> .NET Framework & .NET Core</h4>
-                  <p>
+                  <h4><i class="bi bi-pc-display-horizontal"></i> <span data-i18n="skills.dotnet.title">.NET Framework & .NET Core</span></h4>
+                  <p data-i18n="skills.dotnet.desc">
                     4+ years of experience building internal systems, including payment integrations, booking modules,
                     and dynamic reporting tools in enterprise environments.
                   </p>
@@ -198,8 +207,8 @@
               <!-- Skill: Flutter -->
               <div class="col-md-6">
                 <div class="skill-item">
-                  <h4><i class="bi bi-phone-flip"></i> Flutter</h4>
-                  <p>
+                  <h4><i class="bi bi-phone-flip"></i> <span data-i18n="skills.flutter.title">Flutter</span></h4>
+                  <p data-i18n="skills.flutter.desc">
                     3+ years of experience creating cross-platform apps with rich animations, Hive storage, AdSense
                     integration, and custom game mechanics for personal and client-facing projects.
                   </p>
@@ -209,8 +218,8 @@
               <!-- Skill: SQL Server & Informix -->
               <div class="col-md-6">
                 <div class="skill-item">
-                  <h4><i class="bi bi-database"></i> SQL Server & Informix</h4>
-                  <p>
+                  <h4><i class="bi bi-database"></i> <span data-i18n="skills.sql.title">SQL Server & Informix</span></h4>
+                  <p data-i18n="skills.sql.desc">
                     4+ years working with complex queries, database optimization, and system integrations in critical
                     environments such as education and financial systems.
                   </p>
@@ -220,8 +229,8 @@
               <!-- Skill: Bootstrap -->
               <div class="col-md-6">
                 <div class="skill-item">
-                  <h4><i class="bi bi-layout-text-window"></i> Bootstrap</h4>
-                  <p>
+                  <h4><i class="bi bi-layout-text-window"></i> <span data-i18n="skills.bootstrap.title">Bootstrap</span></h4>
+                  <p data-i18n="skills.bootstrap.desc">
                     Development of responsive layouts, dashboards, and data-driven interfaces integrated with Razor
                     Pages and DataTables in administrative panels and public portals.
                   </p>
@@ -231,8 +240,8 @@
               <!-- Skill: JavaScript & jQuery -->
               <div class="col-md-6">
                 <div class="skill-item">
-                  <h4><i class="bi bi-code-slash"></i> JavaScript & jQuery</h4>
-                  <p>
+                  <h4><i class="bi bi-code-slash"></i> <span data-i18n="skills.js.title">JavaScript & jQuery</span></h4>
+                  <p data-i18n="skills.js.desc">
                     Used in enhancing UI/UX behavior in dynamic forms, real-time validations, and table interactions
                     within complex .NET applications and custom components.
                   </p>
@@ -242,8 +251,8 @@
               <!-- Skill: Razor Pages & C# -->
               <div class="col-md-6">
                 <div class="skill-item">
-                  <h4><i class="bi bi-file-code"></i> Razor Pages & C#</h4>
-                  <p>
+                  <h4><i class="bi bi-file-code"></i> <span data-i18n="skills.razor.title">Razor Pages & C#</span></h4>
+                  <p data-i18n="skills.razor.desc">
                     Experience building maintainable web modules with clean architecture patterns, focusing on
                     maintainability and extensibility in educational platforms.
                   </p>
@@ -262,8 +271,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>With years of experience in software development, I am passionate about creating innovative solutions that
+        <h2 data-i18n="resume.heading">Resume</h2>
+        <p data-i18n="resume.description">With years of experience in software development, I am passionate about creating innovative solutions that
           optimize
           processes and positively impact businesses and users.</p>
 
@@ -277,73 +286,73 @@
 
 
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title" data-i18n="resume.educationTitle">Education</h3>
 
             <div class="resume-item">
-              <h4>Specialist in Web Application Development</h4>
-              <h5>2022 - 2024</h5>
-              <p><em>UNOESTE, University of Western São Paulo</em></p>
+              <h4 data-i18n="resume.edu1.title">Specialist in Web Application Development</h4>
+              <h5 data-i18n="resume.edu1.date">2022 - 2024</h5>
+              <p><em data-i18n="resume.edu1.school">UNOESTE, University of Western São Paulo</em></p>
             </div><!-- End Resume Item -->
 
             <div class="resume-item">
-              <h4>Postgraduate in Web Technologies and Innovations</h4>
-              <h5>2021 - 2022</h5>
-              <p><em>Venda Nova do Imigrante College (FAVENI)</em></p>
+              <h4 data-i18n="resume.edu2.title">Postgraduate in Web Technologies and Innovations</h4>
+              <h5 data-i18n="resume.edu2.date">2021 - 2022</h5>
+              <p><em data-i18n="resume.edu2.school">Venda Nova do Imigrante College (FAVENI)</em></p>
             </div><!-- End Resume Item -->
 
             <div class="resume-item">
-              <h4>Bachelor of Science in Information Systems</h4>
-              <h5>2013 - 2016</h5>
-              <p><em>UNOESTE, University of Western São Paulo</em></p>
+              <h4 data-i18n="resume.edu3.title">Bachelor of Science in Information Systems</h4>
+              <h5 data-i18n="resume.edu3.date">2013 - 2016</h5>
+              <p><em data-i18n="resume.edu3.school">UNOESTE, University of Western São Paulo</em></p>
             </div><!-- End Resume Item -->
-            <h3 class="resume-title">Activities</h3>
+            <h3 class="resume-title" data-i18n="resume.activitiesTitle">Activities</h3>
 
             <div class="resume-item">
               <ul>
-                <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
-                <li>Developed the "Eu Nunca" app, a web version of the "I Never Ever" game with AdSense and Firebase
+                <li data-i18n="resume.activity1">Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+                <li data-i18n="resume.activity2">Developed the "Eu Nunca" app, a web version of the "I Never Ever" game with AdSense and Firebase
                   integration.</li>
-                <li>Developed the "Adviser" app, an app that gives the best worst advice.</li>
+                <li data-i18n="resume.activity3">Developed the "Adviser" app, an app that gives the best worst advice.</li>
 
               </ul>
             </div><!-- End Resume Item -->
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title" data-i18n="resume.experienceTitle">Professional Experience</h3>
 
             <div class="resume-item">
-              <h4>System Analyst</h4>
-              <h5>2023 - Present</h5>
-              <p><em>UNOESTE, University of Western São Paulo, Presidente Prudente, SP</em></p>
+              <h4 data-i18n="resume.exp1.title">System Analyst</h4>
+              <h5 data-i18n="resume.exp1.date">2023 - Present</h5>
+              <p><em data-i18n="resume.exp1.company">UNOESTE, University of Western São Paulo, Presidente Prudente, SP</em></p>
               <ul>
-                <li>Developed a parking payment module for students and staff using .NET 6.0, Bootstrap, and Flutter,
+                <li data-i18n="resume.exp1.bullet1">Developed a parking payment module for students and staff using .NET 6.0, Bootstrap, and Flutter,
                   integrated with a Payments API. The system
                   processes approximately 700 vehicles per month and generates an average monthly revenue of R$5,000.
                 </li>
-                <li>
+                <li data-i18n="resume.exp1.bullet2">
                   Implemented a fully anonymous harassment reporting system integrated into the university’s internal
                   platform, built with .NET Framework 4.5.
                   The module ensures employee confidentiality and automatically generates service protocols.
                 </li>
-                <li>
+                <li data-i18n="resume.exp1.bullet3">
                   Built the “Consulta TCE” student document submission system using .NET Core, integrated with an
                   Electronic Document Management System
                   (GED). This eliminated the need for printed forms, processing nearly 5,000 documents from 1,000
                   students across 7 academic programs, improving
                   document validation for institutional partners.
                 </li>
-                <li>
+                <li data-i18n="resume.exp1.bullet4">
                   Created a Self-Service Totem desktop system featuring client-side functionalities, restricted content
                   access, and activity logging through
                   Elasticsearch, enhancing user autonomy and operational transparency.
                 </li>
-                <li>
+                <li data-i18n="resume.exp1.bullet5">
                   Manage ongoing system maintenance and deployments, resolving bugs, analyzing the feasibility of new
                   features, and applying performance
                   improvements to optimize system behavior.
                 </li>
-                <li>
+                <li data-i18n="resume.exp1.bullet6">
                   Optimize and develop SQL queries in Informix and SQL Server databases, resulting in faster data
                   retrieval and enhanced application performance
                 </li>
@@ -351,32 +360,32 @@
             </div><!-- End Resume Item -->
 
             <div class="resume-item">
-              <h4>.Net Software Engineer</h4>
-              <h5>2021 - 2023</h5>
-              <p><em>COBMAIS, Presidente Prudente, SP</em></p>
+              <h4 data-i18n="resume.exp2.title">.Net Software Engineer</h4>
+              <h5 data-i18n="resume.exp2.date">2021 - 2023</h5>
+              <p><em data-i18n="resume.exp2.company">COBMAIS, Presidente Prudente, SP</em></p>
               <ul>
-                <li>Provided Tier 2 technical support (Level 2) by resolving complex bugs, correcting database
+                <li data-i18n="resume.exp2.bullet1">Provided Tier 2 technical support (Level 2) by resolving complex bugs, correcting database
                   inconsistencies, and fixing API/WebService
                   integrations. Acted as the bridge between Level 1 support and the development team, effectively
                   handling over 2,000 escalated tickets, including
                   critical production issues.
                 </li>
-                <li>
+                <li data-i18n="resume.exp2.bullet2">
                   Collaborated with client development teams to diagnose and resolve integration problems, ensuring the
                   successful deployment of 15+ third-party
                   API integrations.
                 </li>
-                <li>
+                <li data-i18n="resume.exp2.bullet3">
                   Mentored junior support engineers, providing technical guidance and process knowledge, which
                   significantly reduced ticket resolution times and
                   improved team efficiency.
                 </li>
-                <li>
+                <li data-i18n="resume.exp2.bullet4">
                   Created and delivered a comprehensive training program on the internal Stage Database, attended by 105
                   users, with 65 completions, empowering
                   new employees and clients to utilize system features better.
                 </li>
-                <li>
+                <li data-i18n="resume.exp2.bullet5">
                   Led the development of a beta version of “Dynamic Data Extractions”, combining JS Flexmonster, ETL
                   practices, and optimized SQL queries to
                   improve reporting and data accessibility</li>
@@ -384,25 +393,25 @@
             </div><!-- End Resume Item -->
 
             <div class="resume-item">
-              <h4>Technical Support Product Specialist</h4>
-              <h5>2019 - 2021</h5>
-              <p><em>MULTIPLUS CARD, Presidente Prudente, SP</em></p>
+              <h4 data-i18n="resume.exp3.title">Technical Support Product Specialist</h4>
+              <h5 data-i18n="resume.exp3.date">2019 - 2021</h5>
+              <p><em data-i18n="resume.exp3.company">MULTIPLUS CARD, Presidente Prudente, SP</em></p>
               <ul>
-                <li>Provided remote technical support for ERP (Max System Posto) and TEF (TEF Plus) software on a 12x36
+                <li data-i18n="resume.exp3.bullet1">Provided remote technical support for ERP (Max System Posto) and TEF (TEF Plus) software on a 12x36
                   schedule, ensuring uninterrupted system
                   availability for resellers, partners, and end-users.
                 </li>
-                <li>
+                <li data-i18n="resume.exp3.bullet2">
                   Led incident management processes, performing root cause analysis and applying timely resolutions,
                   which minimized downtime and improved
                   overall service reliability.
                 </li>
-                <li>
+                <li data-i18n="resume.exp3.bullet3">
                   Documented recurring software issues and collaborated closely with the development team, resulting in
                   long-term system improvements and
                   enhanced user experience.
                 </li>
-                <li>
+                <li data-i18n="resume.exp3.bullet4">
                   Served as the primary escalation point for high-complexity cases, handling advanced troubleshooting
                   and ensuring effective communication
                   between technical teams and customers.</li>
@@ -425,8 +434,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Sometimes I study on my own and develop something. Some of these projects I publish as products, while others
+        <h2 data-i18n="portfolio.heading">Portfolio</h2>
+        <p data-i18n="portfolio.description">Sometimes I study on my own and develop something. Some of these projects I publish as products, while others
           remain as
           personal knowledge.
           <br />
@@ -439,23 +448,68 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-presentation">Presentations</li>
-            <li data-filter=".filter-article">Article</li>
+            <li data-filter="*" class="filter-active" data-i18n="portfolio.filter.all">All</li>
+            <li data-filter=".filter-web" data-i18n="portfolio.filter.web">Web Systems</li>
+            <li data-filter=".filter-app" data-i18n="portfolio.filter.app">App</li>
+            <li data-filter=".filter-presentation" data-i18n="portfolio.filter.presentation">Presentations</li>
+            <li data-filter=".filter-article" data-i18n="portfolio.filter.article">Article</li>
           </ul><!-- End Portfolio Filters -->
 
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-content h-100">
+                  <div class="portfolio-thumb-placeholder brand-lumuscare">
+                    <div class="brand-wordmark"><i class="bi bi-heart-pulse"></i><span>Lumus Care</span></div>
+                  </div>
+                  <div class="portfolio-info">
+                    <h4 data-i18n="portfolio.lumuscare.title">Lumus Care</h4>
+                    <p data-i18n="portfolio.lumuscare.desc">Full home-healthcare management platform — scheduling, client records, professional
+                      availability, and billing. Built with .NET 9, Vue 3, and MySQL using Clean
+                      Architecture and CQRS. Private client project.</p>
+                    <a href="https://lumuscare.com.br/" target="_blank" title="Visit site" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-content h-100">
+                  <div class="portfolio-thumb-placeholder"><i class="bi bi-brush"></i></div>
+                  <div class="portfolio-info">
+                    <h4 data-i18n="portfolio.inara.title">Inara Studio Tee</h4>
+                    <p data-i18n="portfolio.inara.desc">Tattoo studio portfolio site with an admin-managed gallery, collections, client
+                      showcase, and a WhatsApp-based quote request flow. Built with .NET 9, Vue 3, and MySQL.
+                      Private client project.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-content h-100">
+                  <div class="portfolio-thumb-placeholder brand-revestidos">
+                    <div class="brand-wordmark"><i class="bi bi-bag"></i><span>Revestidos de Graça</span></div>
+                  </div>
+                  <div class="portfolio-info">
+                    <h4 data-i18n="portfolio.revestidos.title">Revestidos de Graça</h4>
+                    <p data-i18n="portfolio.revestidos.desc">E-commerce site for a Christian apparel brand — product catalog, size/color variants,
+                      stock-aware ordering, and WhatsApp checkout. Built with .NET 9, Vue 3, and MySQL.
+                      Private client project.</p>
+                    <a href="https://revestidosdegraca.com.br/" target="_blank" title="Visit site" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                 <div class="portfolio-content h-100">
                   <img src="assets/img/portfolio/eununca.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>Eu Nunca</h4>
-                    <p>The digital version of the famous "Never Have I Ever" game, designed for 2 or more players. It
+                    <h4 data-i18n="portfolio.eununca.title">Eu Nunca</h4>
+                    <p data-i18n="portfolio.eununca.desc">The digital version of the famous "Never Have I Ever" game, designed for 2 or more players. It
                       features a series of questions in various categories that players must answer honestly.</p>
-                    <a href="docs/inever.pdf" target="_blank" title=" I NEVER EVER" class="  preview-link">
+                    <a href="docs/inever.pdf" target="_blank" title="I NEVER EVER" class="preview-link">
                       <i class="bi bi-zoom-in"></i>
                     </a>
 
@@ -469,10 +523,10 @@
                 <div class="portfolio-content h-100">
                   <img src="assets/img/portfolio/conselheiro.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>The Advisor</h4>
-                    <p> Your pocket-sized source of brilliantly bad advice.<br />
-                      receive the best worst advice in 4 languages</p>
-                    <a href="docs/theadvisor.pdf" title="The Advisor" target="_blank" title="The Adisor"
+                    <h4 data-i18n="portfolio.advisor.title">The Advisor</h4>
+                    <p><span data-i18n="portfolio.advisor.desc">Your pocket-sized source of brilliantly bad advice.</span><br />
+                      <span data-i18n="portfolio.advisor.desc2">receive the best worst advice in 4 languages</span></p>
+                    <a href="docs/theadvisor.pdf" target="_blank" title="The Advisor"
                       class="preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="https://play.google.com/store/apps/details?id=com.Oconselheiro.conselheiro_app&pcampaignid=web_share"
                       target="_blank" title="Download the app" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -484,10 +538,10 @@
                 <div class="portfolio-content h-100">
                   <img src="assets/img/portfolio/presentation1.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>A Brief Introduction to Microsoft Azure - Feb/2024</h4>
+                    <h4 data-i18n="portfolio.azure.title">A Brief Introduction to Microsoft Azure - Feb/2024</h4>
                     <p>
-                      Summary of Azure Functionality <br />
-                      <small> Developed during the Postgraduate Specialization in Web Applications Development.
+                      <span data-i18n="portfolio.azure.desc">Summary of Azure Functionality</span> <br />
+                      <small data-i18n="portfolio.azure.note"> Developed during the Postgraduate Specialization in Web Applications Development.
                         Note: This document was written in Portuguese.</small>
                     </p>
 
@@ -500,10 +554,10 @@
                 <div class="portfolio-content h-100">
                   <img src="assets/img/portfolio/presentation2.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>The Contribution of the Pandemic to the Adoption of Remote Work - Dec/2022</h4>
+                    <h4 data-i18n="portfolio.pandemic.title">The Contribution of the Pandemic to the Adoption of Remote Work - Dec/2022</h4>
                     <p>
-                      How Covid-19 Accelerated the Adoption of Remote Work<br />
-                      <small> Developed as the final project for the postgraduate course in Web Technologies and
+                      <span data-i18n="portfolio.pandemic.desc">How Covid-19 Accelerated the Adoption of Remote Work</span><br />
+                      <small data-i18n="portfolio.pandemic.note"> Developed as the final project for the postgraduate course in Web Technologies and
                         Innovations.
                         Note: This document was written in Portuguese.</small>
                     </p>
@@ -517,14 +571,13 @@
                 <div class="portfolio-content h-100">
                   <img src="assets/img/portfolio/presentation3.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
-                    <h4>The Use of Encryption for Data Protection - Dec/2017</h4>
+                    <h4 data-i18n="portfolio.encryption.title">The Use of Encryption for Data Protection - Dec/2017</h4>
 
                     <p>
-                      How Encryption Works, Its Advantages and Disadvantages
-                      <small>Developed based on materials studied during undergraduate education
+                      <span data-i18n="portfolio.encryption.desc">How Encryption Works, Its Advantages and Disadvantages</span>
+                      <small data-i18n="portfolio.encryption.note">Developed based on materials studied during undergraduate education
 
                         Note: This document was written in Portuguese.</small>
-                    </p>
                     </p>
 
                     <a href="docs/Cripto_para_protecao.pdf" target="_blank" title="See the file" class="details-link"><i
@@ -548,9 +601,9 @@
 
   <footer id="footer" class="footer position-relative light-background">
     <div class="copyright text-center ">
-      <a class="" href="/docs/Lucas Lanza Resume.pdf" target=" _blank">
+      <a href="/docs/Lucas%20Lanza%20Resume.pdf" target="_blank" data-i18n="footer.cv">
         Download Updated CV (PDF)</a>
-      <p class="mb-0">©Todos os Direitos Reservados &copy; 2025 - LLanza.</p>
+      <p class="mb-0" data-i18n="footer.copyright">&copy; 2026 Lucas Lanza. All rights reserved.</p>
     </div>
 
 
@@ -577,6 +630,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Theme + Language -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/i18n.js"></script>
 
 </body>
 
