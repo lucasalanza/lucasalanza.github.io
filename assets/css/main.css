@@ -977,24 +977,8 @@ section,
 
 /* Brand wordmark thumbnails — real brand colors of each live client site,
    used in place of a screenshot until one is available. */
-.portfolio .portfolio-content .portfolio-thumb-placeholder.brand-lumuscare {
-  background: linear-gradient(135deg, #0a1e33, #027cc4 65%, #4f9855);
-}
-
 .portfolio .portfolio-content .portfolio-thumb-placeholder.brand-revestidos {
   background: linear-gradient(135deg, #5e2230, #7a2e3c 60%, #c9a227);
-}
-
-.portfolio .portfolio-content .portfolio-thumb-placeholder.brand-salao-beleza {
-  background: linear-gradient(135deg, #2e2a24, #566152 60%, #935536);
-}
-
-.portfolio .portfolio-content .portfolio-thumb-placeholder.brand-estetica-automotiva {
-  background: linear-gradient(135deg, #0a0a0a, #1a1a1a 60%, #eab308);
-}
-
-.portfolio .portfolio-content .portfolio-thumb-placeholder.brand-personal-trainer {
-  background: linear-gradient(135deg, #0f3d3e, #ff7a50);
 }
 
 .portfolio .portfolio-content .portfolio-thumb-placeholder .brand-wordmark {
