@@ -955,55 +955,6 @@ section,
   transform: scale(1.1);
 }
 
-/* Placeholder thumbnail for portfolio items without a screenshot yet */
-.portfolio .portfolio-content .portfolio-thumb-placeholder {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--accent-color), var(--heading-color));
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-content .portfolio-thumb-placeholder i {
-  font-size: 48px;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.portfolio .portfolio-content:hover .portfolio-thumb-placeholder {
-  transform: scale(1.1);
-}
-
-/* Brand wordmark thumbnails — real brand colors of each live client site,
-   used in place of a screenshot until one is available. */
-.portfolio .portfolio-content .portfolio-thumb-placeholder.brand-revestidos {
-  background: linear-gradient(135deg, #5e2230, #7a2e3c 60%, #c9a227);
-}
-
-.portfolio .portfolio-content .portfolio-thumb-placeholder .brand-wordmark {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 0 16px;
-  text-align: center;
-}
-
-.portfolio .portfolio-content .portfolio-thumb-placeholder .brand-wordmark i {
-  font-size: 28px;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.portfolio .portfolio-content .portfolio-thumb-placeholder .brand-wordmark span {
-  font-family: var(--heading-font);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #ffffff;
-  letter-spacing: 0.3px;
-}
-
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
