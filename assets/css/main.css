@@ -609,51 +609,42 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
   position: relative;
-  padding: 80px 0;
+  padding: 140px 0 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-.hero img {
-  position: absolute;
-  inset: 0;
+.hero .hero-img {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 70%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 3;
+  margin: 0 auto 20px;
+  width: 140px;
+  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .hero h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 700;
 }
 
 .hero p {
   margin: 5px 0 0 0;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .hero p span {
   letter-spacing: 1px;
   border-bottom: 2px solid var(--accent-color);
+}
+
+.hero .hero-intro {
+  max-width: 560px;
+  margin: 20px auto 0;
+  font-size: 17px;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
 }
 
 .hero .social-links {

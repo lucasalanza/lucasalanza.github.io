@@ -14,28 +14,28 @@
     })();
   </script>
 
-  <title>Lucas Lanza | .NET Software Engineer & Full Stack Developer</title>
+  <title>Lucas Lanza | Software Projects Portfolio</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Lucas Lanza is a full-stack software engineer specializing in .NET, Flutter, and API integrations. Explore portfolio, resume, and technical skills.">
+    content="Explore Lucas Lanza's software projects — .NET, Flutter, and full-stack systems built for real clients and products. Get in touch.">
   <meta name="keywords"
-    content=".NET Developer, Flutter Developer, Full Stack Engineer, Lucas Lanza, Software Engineer, API Integration, SQL Server, Informix, C#, Razor Pages">
+    content=".NET Developer, Flutter Developer, Full Stack Engineer, Lucas Lanza, Software Engineer, Portfolio, API Integration">
   <meta name="author" content="Lucas Lanza">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Lucas Lanza | .NET Software Engineer">
+  <meta property="og:title" content="Lucas Lanza | Software Projects Portfolio">
   <meta property="og:description"
-    content="Full-stack developer focused on .NET, Flutter, and system integration. Check out my portfolio and resume.">
+    content="Explore Lucas Lanza's software projects — .NET, Flutter, and full-stack systems built for real clients and products.">
   <meta property="og:image" content="https://lucasalanza.github.io/assets/img/my-profile-img.jpg">
   <meta property="og:url" content="https://lucasalanza.github.io/">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lucas Lanza | .NET Software Engineer">
+  <meta name="twitter:title" content="Lucas Lanza | Software Projects Portfolio">
   <meta name="twitter:description"
-    content="Full-stack developer focused on .NET, Flutter, and system integration. Check out my portfolio and resume.">
+    content="Explore Lucas Lanza's software projects — .NET, Flutter, and full-stack systems built for real clients and products.">
   <meta name="twitter:image" content="https://lucasalanza.github.io/assets/img/my-profile-img.jpg">
 
   <link rel="canonical" href="https://lucasalanza.github.io/">
@@ -46,13 +46,11 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Lucas Lanza",
-    "jobTitle": "Software Engineer",
     "url": "https://lucasalanza.github.io/",
     "image": "https://lucasalanza.github.io/assets/img/my-profile-img.jpg",
     "sameAs": [
       "https://www.linkedin.com/in/lucasalanza/"
-    ],
-    "knowsAbout": [".NET", "C#", "Vue.js", "Flutter", "API Integration", "SQL Server"]
+    ]
   }
   </script>
 
@@ -79,7 +77,7 @@
 
 </head>
 
-<body class="index-page">
+<body class="index-page" data-page="home">
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -116,9 +114,9 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav.home">Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav.about">About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav.resume">Resume</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav.portfolio">Portfolio</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav.contact">Contact</span></a></li>
+        <li><a href="perfil/"><i class="bi bi-person-badge navicon"></i> <span data-i18n="nav.perfil">Profile</span></a></li>
       </ul>
     </nav>
 
@@ -129,323 +127,16 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/my-profile-img.jpg" alt="Lucas Lanza" class="hero-img img-fluid rounded-circle">
         <h2>Lucas Lanza</h2>
         <p><span data-i18n="hero.prefix">I'm a</span> <span class="typed" data-typed-items=".NET Developer, System Analyst, Brazilian, Traveler">.NET
             Software Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
             class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p class="hero-intro" data-i18n="hero.intro">I build full-stack web systems and apps. Take a look at the projects below, or get in touch.</p>
       </div>
 
     </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 data-i18n="about.heading">About Me</h2>
-        <p data-i18n="about.p1">
-          I am a Software Engineer currently in the process of relocating to the US, with over four years of experience
-          in full-stack development, specializing in .NET, Flutter, and API integrations. Passionate about
-          problem-solving and system optimization, I’ve worked on both legacy and modern systems—enhancing performance,
-          automating processes, and improving user experience.
-        </p>
-        <p data-i18n="about.p2">
-          Beyond my professional work, I’m always exploring new technologies like cloud computing and automation.
-        </p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2 data-i18n="about.subheading">.Net Software Engineer.</h2>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.birthdayLabel">Birthday:</strong> <span data-i18n="about.birthdayValue">11 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.phoneLabel">Phone:</strong> <span>+55 18 98110 2937</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.cityLabel">City:</strong> <span data-i18n="about.cityValue">Presidente Prudente/SP,
-                      BRAZIL</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.linkedinLabel">LinkedIn:</strong>
-                    <a href="https://www.linkedin.com/in/lucasalanza/" target="_blank"
-                      class="btn btn-outline-primary btn-sm">Lucas Lanza</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.emailLabel">Email:</strong> <span>lucasalanza@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.moveAbroadLabel">Move Abroad:</strong> <span data-i18n="about.moveAbroadValue">Available for
-                      relocation</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-    <section id="skills" class="skills section light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 data-i18n="skills.heading">Skills</h2>
-        <p data-i18n="skills.description">
-          I explore diverse technologies in challenging and impactful projects, always seeking continuous learning and
-          professional growth. Below are some of the main tools and technologies I’ve worked with in real-world
-          applications:
-        </p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-12">
-            <div class="row gy-4">
-
-              <!-- Skill: .NET -->
-              <div class="col-md-6">
-                <div class="skill-item">
-                  <h4><i class="bi bi-pc-display-horizontal"></i> <span data-i18n="skills.dotnet.title">.NET Framework & .NET Core</span></h4>
-                  <p data-i18n="skills.dotnet.desc">
-                    4+ years of experience building internal systems, including payment integrations, booking modules,
-                    and dynamic reporting tools in enterprise environments.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Skill: Flutter -->
-              <div class="col-md-6">
-                <div class="skill-item">
-                  <h4><i class="bi bi-phone-flip"></i> <span data-i18n="skills.flutter.title">Flutter</span></h4>
-                  <p data-i18n="skills.flutter.desc">
-                    3+ years of experience creating cross-platform apps with rich animations, Hive storage, AdSense
-                    integration, and custom game mechanics for personal and client-facing projects.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Skill: SQL Server & Informix -->
-              <div class="col-md-6">
-                <div class="skill-item">
-                  <h4><i class="bi bi-database"></i> <span data-i18n="skills.sql.title">SQL Server & Informix</span></h4>
-                  <p data-i18n="skills.sql.desc">
-                    4+ years working with complex queries, database optimization, and system integrations in critical
-                    environments such as education and financial systems.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Skill: Bootstrap -->
-              <div class="col-md-6">
-                <div class="skill-item">
-                  <h4><i class="bi bi-layout-text-window"></i> <span data-i18n="skills.bootstrap.title">Bootstrap</span></h4>
-                  <p data-i18n="skills.bootstrap.desc">
-                    Development of responsive layouts, dashboards, and data-driven interfaces integrated with Razor
-                    Pages and DataTables in administrative panels and public portals.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Skill: JavaScript & jQuery -->
-              <div class="col-md-6">
-                <div class="skill-item">
-                  <h4><i class="bi bi-code-slash"></i> <span data-i18n="skills.js.title">JavaScript & jQuery</span></h4>
-                  <p data-i18n="skills.js.desc">
-                    Used in enhancing UI/UX behavior in dynamic forms, real-time validations, and table interactions
-                    within complex .NET applications and custom components.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Skill: Razor Pages & C# -->
-              <div class="col-md-6">
-                <div class="skill-item">
-                  <h4><i class="bi bi-file-code"></i> <span data-i18n="skills.razor.title">Razor Pages & C#</span></h4>
-                  <p data-i18n="skills.razor.desc">
-                    Experience building maintainable web modules with clean architecture patterns, focusing on
-                    maintainability and extensibility in educational platforms.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 data-i18n="resume.heading">Resume</h2>
-        <p data-i18n="resume.description">With years of experience in software development, I am passionate about creating innovative solutions that
-          optimize
-          processes and positively impact businesses and users.</p>
-
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-
-
-            <h3 class="resume-title" data-i18n="resume.educationTitle">Education</h3>
-
-            <div class="resume-item">
-              <h4 data-i18n="resume.edu1.title">Specialist in Web Application Development</h4>
-              <h5 data-i18n="resume.edu1.date">2022 - 2024</h5>
-              <p><em data-i18n="resume.edu1.school">UNOESTE, University of Western São Paulo</em></p>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4 data-i18n="resume.edu2.title">Postgraduate in Web Technologies and Innovations</h4>
-              <h5 data-i18n="resume.edu2.date">2021 - 2022</h5>
-              <p><em data-i18n="resume.edu2.school">Venda Nova do Imigrante College (FAVENI)</em></p>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4 data-i18n="resume.edu3.title">Bachelor of Science in Information Systems</h4>
-              <h5 data-i18n="resume.edu3.date">2013 - 2016</h5>
-              <p><em data-i18n="resume.edu3.school">UNOESTE, University of Western São Paulo</em></p>
-            </div><!-- End Resume Item -->
-            <h3 class="resume-title" data-i18n="resume.activitiesTitle">Activities</h3>
-
-            <div class="resume-item">
-              <ul>
-                <li data-i18n="resume.activity1">Microsoft Certified: Azure Fundamentals (AZ-900)</li>
-                <li data-i18n="resume.activity2">Developed the "Eu Nunca" app, a web version of the "I Never Ever" game with AdSense and Firebase
-                  integration.</li>
-                <li data-i18n="resume.activity3">Developed the "Adviser" app, an app that gives the best worst advice.</li>
-
-              </ul>
-            </div><!-- End Resume Item -->
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title" data-i18n="resume.experienceTitle">Professional Experience</h3>
-
-            <div class="resume-item">
-              <h4 data-i18n="resume.exp1.title">System Analyst</h4>
-              <h5 data-i18n="resume.exp1.date">2023 - Present</h5>
-              <p><em data-i18n="resume.exp1.company">UNOESTE, University of Western São Paulo, Presidente Prudente, SP</em></p>
-              <ul>
-                <li data-i18n="resume.exp1.bullet1">Developed a parking payment module for students and staff using .NET 6.0, Bootstrap, and Flutter,
-                  integrated with a Payments API. The system
-                  processes approximately 700 vehicles per month and generates an average monthly revenue of R$5,000.
-                </li>
-                <li data-i18n="resume.exp1.bullet2">
-                  Implemented a fully anonymous harassment reporting system integrated into the university’s internal
-                  platform, built with .NET Framework 4.5.
-                  The module ensures employee confidentiality and automatically generates service protocols.
-                </li>
-                <li data-i18n="resume.exp1.bullet3">
-                  Built the “Consulta TCE” student document submission system using .NET Core, integrated with an
-                  Electronic Document Management System
-                  (GED). This eliminated the need for printed forms, processing nearly 5,000 documents from 1,000
-                  students across 7 academic programs, improving
-                  document validation for institutional partners.
-                </li>
-                <li data-i18n="resume.exp1.bullet4">
-                  Created a Self-Service Totem desktop system featuring client-side functionalities, restricted content
-                  access, and activity logging through
-                  Elasticsearch, enhancing user autonomy and operational transparency.
-                </li>
-                <li data-i18n="resume.exp1.bullet5">
-                  Manage ongoing system maintenance and deployments, resolving bugs, analyzing the feasibility of new
-                  features, and applying performance
-                  improvements to optimize system behavior.
-                </li>
-                <li data-i18n="resume.exp1.bullet6">
-                  Optimize and develop SQL queries in Informix and SQL Server databases, resulting in faster data
-                  retrieval and enhanced application performance
-                </li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4 data-i18n="resume.exp2.title">.Net Software Engineer</h4>
-              <h5 data-i18n="resume.exp2.date">2021 - 2023</h5>
-              <p><em data-i18n="resume.exp2.company">COBMAIS, Presidente Prudente, SP</em></p>
-              <ul>
-                <li data-i18n="resume.exp2.bullet1">Provided Tier 2 technical support (Level 2) by resolving complex bugs, correcting database
-                  inconsistencies, and fixing API/WebService
-                  integrations. Acted as the bridge between Level 1 support and the development team, effectively
-                  handling over 2,000 escalated tickets, including
-                  critical production issues.
-                </li>
-                <li data-i18n="resume.exp2.bullet2">
-                  Collaborated with client development teams to diagnose and resolve integration problems, ensuring the
-                  successful deployment of 15+ third-party
-                  API integrations.
-                </li>
-                <li data-i18n="resume.exp2.bullet3">
-                  Mentored junior support engineers, providing technical guidance and process knowledge, which
-                  significantly reduced ticket resolution times and
-                  improved team efficiency.
-                </li>
-                <li data-i18n="resume.exp2.bullet4">
-                  Created and delivered a comprehensive training program on the internal Stage Database, attended by 105
-                  users, with 65 completions, empowering
-                  new employees and clients to utilize system features better.
-                </li>
-                <li data-i18n="resume.exp2.bullet5">
-                  Led the development of a beta version of “Dynamic Data Extractions”, combining JS Flexmonster, ETL
-                  practices, and optimized SQL queries to
-                  improve reporting and data accessibility</li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4 data-i18n="resume.exp3.title">Technical Support Product Specialist</h4>
-              <h5 data-i18n="resume.exp3.date">2019 - 2021</h5>
-              <p><em data-i18n="resume.exp3.company">MULTIPLUS CARD, Presidente Prudente, SP</em></p>
-              <ul>
-                <li data-i18n="resume.exp3.bullet1">Provided remote technical support for ERP (Max System Posto) and TEF (TEF Plus) software on a 12x36
-                  schedule, ensuring uninterrupted system
-                  availability for resellers, partners, and end-users.
-                </li>
-                <li data-i18n="resume.exp3.bullet2">
-                  Led incident management processes, performing root cause analysis and applying timely resolutions,
-                  which minimized downtime and improved
-                  overall service reliability.
-                </li>
-                <li data-i18n="resume.exp3.bullet3">
-                  Documented recurring software issues and collaborated closely with the development team, resulting in
-                  long-term system improvements and
-                  enhanced user experience.
-                </li>
-                <li data-i18n="resume.exp3.bullet4">
-                  Served as the primary escalation point for high-complexity cases, handling advanced troubleshooting
-                  and ensuring effective communication
-                  between technical teams and customers.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
@@ -481,9 +172,9 @@
                   <img src="assets/img/portfolio/lumuscare.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4 data-i18n="portfolio.lumuscare.title">Lumus Care</h4>
-                    <p data-i18n="portfolio.lumuscare.desc">Full home-healthcare management platform — scheduling, client records, professional
-                      availability, and billing. Built with .NET 9, Vue 3, and MySQL using Clean
-                      Architecture and CQRS. Private client project.</p>
+                    <p data-i18n="portfolio.lumuscare.desc">Management system for home-healthcare clinics — helps small clinics schedule visits, track client
+                      records, manage professional availability, and handle billing in one place. Built with .NET 9, Vue 3, and MySQL
+                      using Clean Architecture and CQRS. Private client project.</p>
                     <a href="https://lumuscare.com.br/" target="_blank" title="Visit site" class="details-link"><i
                         class="bi bi-link-45deg"></i></a>
                   </div>
@@ -495,8 +186,8 @@
                   <img src="assets/img/portfolio/studiotee.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4 data-i18n="portfolio.inara.title">Inara Studio Tee</h4>
-                    <p data-i18n="portfolio.inara.desc">Tattoo studio portfolio site with an admin-managed gallery, collections, client
-                      showcase, and a WhatsApp-based quote request flow. Built with .NET 9, Vue 3, and MySQL.
+                    <p data-i18n="portfolio.inara.desc">Public site for a tattoo studio to showcase its work and win new clients — admin-managed gallery,
+                      collections, client showcase, and a WhatsApp-based quote request flow. Built with .NET 9, Vue 3, and MySQL.
                       Private client project.</p>
                     <a href="http://137.131.229.33/studiotee/" target="_blank" title="Visit site" class="details-link"><i
                         class="bi bi-link-45deg"></i></a>
@@ -509,9 +200,9 @@
                   <img src="assets/img/portfolio/revestidos.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4 data-i18n="portfolio.revestidos.title">Revestidos de Graça</h4>
-                    <p data-i18n="portfolio.revestidos.desc">Reusable business site template — product catalog with size/color
-                      variants, blog with care tips, and admin dashboard with fictitious sales data, all editable
-                      from a custom admin panel. Built with .NET 9, Vue 3, and MySQL.</p>
+                    <p data-i18n="portfolio.revestidos.desc">Reusable e-commerce template for small apparel brands — product catalog with size/color
+                      variants, blog with care tips, and a sales dashboard, all editable from a custom admin panel (shown here with
+                      sample data). Built with .NET 9, Vue 3, and MySQL.</p>
                     <a href="https://revestidosdegraca.com.br/" target="_blank" title="Visit site" class="details-link"><i
                         class="bi bi-link-45deg"></i></a>
                   </div>
@@ -523,8 +214,8 @@
                   <img src="assets/img/portfolio/salao-beleza.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4 data-i18n="portfolio.salao.title">Beauty Salon Template</h4>
-                    <p data-i18n="portfolio.salao.desc">Reusable business site template — portfolio gallery, services, team, and
-                      testimonials, all editable from a custom admin panel. Built with .NET 9, Vue 3, and MySQL.</p>
+                    <p data-i18n="portfolio.salao.desc">Reusable site template for beauty salons — work gallery, service list, team, and
+                      testimonials, all editable from a custom admin panel without touching code. Built with .NET 9, Vue 3, and MySQL.</p>
                     <a href="http://137.131.229.33/salao-beleza/" target="_blank" title="Visit site" class="details-link"><i
                         class="bi bi-link-45deg"></i></a>
                   </div>
@@ -536,7 +227,7 @@
                   <img src="assets/img/portfolio/estetica-automotiva.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4 data-i18n="portfolio.estetica.title">Car Detailing Template</h4>
-                    <p data-i18n="portfolio.estetica.desc">Reusable business site template — services with pricing, recommended
+                    <p data-i18n="portfolio.estetica.desc">Reusable site template for car detailing shops — services with pricing, recommended
                       products, maintenance tips, and gallery, all editable from a custom admin panel. Built with .NET
                       9, Vue 3, and MySQL.</p>
                     <a href="http://137.131.229.33/estetica-automotiva/" target="_blank" title="Visit site"
@@ -550,8 +241,8 @@
                   <img src="assets/img/portfolio/personal-trainer.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4 data-i18n="portfolio.personal.title">Personal Trainer Template</h4>
-                    <p data-i18n="portfolio.personal.desc">Reusable business site template — services, training tips blog,
-                      professionals, service locations, and testimonials, all editable from a custom admin panel.
+                    <p data-i18n="portfolio.personal.desc">Reusable site template for personal trainers — services, a training tips blog,
+                      staff profiles, service locations, and testimonials, all editable from a custom admin panel.
                       Built with .NET 9, Vue 3, and MySQL.</p>
                     <a href="http://137.131.229.33/personal-trainer/" target="_blank" title="Visit site"
                       class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -570,8 +261,8 @@
                       <i class="bi bi-zoom-in"></i>
                     </a>
 
-                    <a href="https://play.google.com/store/apps/details?id=com.eununca.eununca_app&pcampaignid=web_share"
-                      target="_blank" title="Download the app" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="https://eununca.app.br" target="_blank" title="Visit site" class="details-link"><i
+                        class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               </div>
@@ -654,12 +345,52 @@
         </div>
 
     </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="contact.heading">Contact</h2>
+        <p data-i18n="contact.description">Have a project in mind or want to know more about my work? Reach out through any of the
+          channels below.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex flex-column justify-content-center">
+              <i class="bi bi-envelope"></i>
+              <h3 data-i18n="contact.emailLabel">Email</h3>
+              <p><a href="mailto:lucasalanza@gmail.com">lucasalanza@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex flex-column justify-content-center">
+              <i class="bi bi-instagram"></i>
+              <h3>Instagram</h3>
+              <p><a target="_blank" href="https://www.instagram.com/lucaslanza.7/">@lucaslanza.7</a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex flex-column justify-content-center">
+              <i class="bi bi-linkedin"></i>
+              <h3>LinkedIn</h3>
+              <p><a target="_blank" href="https://www.linkedin.com/in/lucasalanza/">@lucasalanza</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Contact Section -->
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
     <div class="copyright text-center ">
-      <a href="/docs/Lucas%20Lanza%20Resume.pdf" target="_blank" data-i18n="footer.cv">
-        Download Updated CV (PDF)</a>
       <p class="mb-0" data-i18n="footer.copyright">&copy; 2026 Lucas Lanza. All rights reserved.</p>
     </div>
 

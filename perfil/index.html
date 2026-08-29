@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Set theme before first paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem("site_theme");
+      var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
+  <title>Lucas Lanza | Resume & Experience</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Lucas Lanza's resume — over four years of full-stack experience in .NET, Flutter, and API integrations. Skills, education, and professional history.">
+  <meta name="keywords"
+    content=".NET Developer, Flutter Developer, Full Stack Engineer, Lucas Lanza, Resume, Software Engineer, SQL Server, Informix, C#, Razor Pages">
+  <meta name="author" content="Lucas Lanza">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Lucas Lanza | Resume & Experience">
+  <meta property="og:description"
+    content="Over four years of full-stack experience in .NET, Flutter, and API integrations. Skills, education, and professional history.">
+  <meta property="og:image" content="https://lucasalanza.github.io/assets/img/my-profile-img.jpg">
+  <meta property="og:url" content="https://lucasalanza.github.io/perfil/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lucas Lanza | Resume & Experience">
+  <meta name="twitter:description"
+    content="Over four years of full-stack experience in .NET, Flutter, and API integrations. Skills, education, and professional history.">
+  <meta name="twitter:image" content="https://lucasalanza.github.io/assets/img/my-profile-img.jpg">
+
+  <link rel="canonical" href="https://lucasalanza.github.io/perfil/">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lucas Lanza",
+    "jobTitle": "Software Engineer",
+    "url": "https://lucasalanza.github.io/perfil/",
+    "image": "https://lucasalanza.github.io/assets/img/my-profile-img.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/lucasalanza/"
+    ],
+    "knowsAbout": [".NET", "C#", "Vue.js", "Flutter", "API Integration", "SQL Server"]
+  }
+  </script>
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.ico" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page" data-page="perfil">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="../assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="../index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Lucas Lanza</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a target="_blank" href="https://www.instagram.com/lucaslanza.7/" class="instagram"><i
+          class="bi bi-instagram"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/lucasalanza/" class="linkedin"><i
+          class="bi bi-linkedin"></i></a>
+    </div>
+
+    <div class="site-controls d-flex align-items-center justify-content-center">
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button type="button" data-lang="pt" aria-label="Português">PT</button>
+        <button type="button" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <button type="button" class="theme-toggle" aria-label="Toggle light/dark theme">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html"><i class="bi bi-house navicon"></i><span data-i18n="nav.home">Home</span></a></li>
+        <li><a href="#about" class="active"><i class="bi bi-person navicon"></i> <span data-i18n="nav.about">About</span></a></li>
+        <li><a href="#skills"><i class="bi bi-stars navicon"></i> <span data-i18n="nav.skills">Skills</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav.resume">Resume</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="about.heading">About Me</h2>
+        <p data-i18n="about.p1">
+          I am a Software Engineer currently in the process of relocating to the US, with over four years of experience
+          in full-stack development, specializing in .NET, Flutter, and API integrations. Passionate about
+          problem-solving and system optimization, I’ve worked on both legacy and modern systems—enhancing performance,
+          automating processes, and improving user experience.
+        </p>
+        <p data-i18n="about.p2">
+          Beyond my professional work, I’m always exploring new technologies like cloud computing and automation.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="../assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2 data-i18n="about.subheading">.Net Software Engineer.</h2>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.birthdayLabel">Birthday:</strong> <span data-i18n="about.birthdayValue">11 May 1995</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.phoneLabel">Phone:</strong> <span>+55 18 98110 2937</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.cityLabel">City:</strong> <span data-i18n="about.cityValue">Presidente Prudente/SP,
+                      BRAZIL</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.linkedinLabel">LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/lucasalanza/" target="_blank"
+                      class="btn btn-outline-primary btn-sm">Lucas Lanza</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.emailLabel">Email:</strong> <span>lucasalanza@gmail.com</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.moveAbroadLabel">Move Abroad:</strong> <span data-i18n="about.moveAbroadValue">Available for
+                      relocation</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+    <section id="skills" class="skills section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="skills.heading">Skills</h2>
+        <p data-i18n="skills.description">
+          I explore diverse technologies in challenging and impactful projects, always seeking continuous learning and
+          professional growth. Below are some of the main tools and technologies I’ve worked with in real-world
+          applications:
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-12">
+            <div class="row gy-4">
+
+              <!-- Skill: .NET -->
+              <div class="col-md-6">
+                <div class="skill-item">
+                  <h4><i class="bi bi-pc-display-horizontal"></i> <span data-i18n="skills.dotnet.title">.NET Framework & .NET Core</span></h4>
+                  <p data-i18n="skills.dotnet.desc">
+                    4+ years of experience building internal systems, including payment integrations, booking modules,
+                    and dynamic reporting tools in enterprise environments.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill: Flutter -->
+              <div class="col-md-6">
+                <div class="skill-item">
+                  <h4><i class="bi bi-phone-flip"></i> <span data-i18n="skills.flutter.title">Flutter</span></h4>
+                  <p data-i18n="skills.flutter.desc">
+                    3+ years of experience creating cross-platform apps with rich animations, Hive storage, AdSense
+                    integration, and custom game mechanics for personal and client-facing projects.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill: SQL Server & Informix -->
+              <div class="col-md-6">
+                <div class="skill-item">
+                  <h4><i class="bi bi-database"></i> <span data-i18n="skills.sql.title">SQL Server & Informix</span></h4>
+                  <p data-i18n="skills.sql.desc">
+                    4+ years working with complex queries, database optimization, and system integrations in critical
+                    environments such as education and financial systems.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill: Bootstrap -->
+              <div class="col-md-6">
+                <div class="skill-item">
+                  <h4><i class="bi bi-layout-text-window"></i> <span data-i18n="skills.bootstrap.title">Bootstrap</span></h4>
+                  <p data-i18n="skills.bootstrap.desc">
+                    Development of responsive layouts, dashboards, and data-driven interfaces integrated with Razor
+                    Pages and DataTables in administrative panels and public portals.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill: JavaScript & jQuery -->
+              <div class="col-md-6">
+                <div class="skill-item">
+                  <h4><i class="bi bi-code-slash"></i> <span data-i18n="skills.js.title">JavaScript & jQuery</span></h4>
+                  <p data-i18n="skills.js.desc">
+                    Used in enhancing UI/UX behavior in dynamic forms, real-time validations, and table interactions
+                    within complex .NET applications and custom components.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Skill: Razor Pages & C# -->
+              <div class="col-md-6">
+                <div class="skill-item">
+                  <h4><i class="bi bi-file-code"></i> <span data-i18n="skills.razor.title">Razor Pages & C#</span></h4>
+                  <p data-i18n="skills.razor.desc">
+                    Experience building maintainable web modules with clean architecture patterns, focusing on
+                    maintainability and extensibility in educational platforms.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="resume.heading">Resume</h2>
+        <p data-i18n="resume.description">With years of experience in software development, I am passionate about creating innovative solutions that
+          optimize
+          processes and positively impact businesses and users.</p>
+
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+
+
+            <h3 class="resume-title" data-i18n="resume.educationTitle">Education</h3>
+
+            <div class="resume-item">
+              <h4 data-i18n="resume.edu1.title">Specialist in Web Application Development</h4>
+              <h5 data-i18n="resume.edu1.date">2022 - 2024</h5>
+              <p><em data-i18n="resume.edu1.school">UNOESTE, University of Western São Paulo</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4 data-i18n="resume.edu2.title">Postgraduate in Web Technologies and Innovations</h4>
+              <h5 data-i18n="resume.edu2.date">2021 - 2022</h5>
+              <p><em data-i18n="resume.edu2.school">Venda Nova do Imigrante College (FAVENI)</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4 data-i18n="resume.edu3.title">Bachelor of Science in Information Systems</h4>
+              <h5 data-i18n="resume.edu3.date">2013 - 2016</h5>
+              <p><em data-i18n="resume.edu3.school">UNOESTE, University of Western São Paulo</em></p>
+            </div><!-- End Resume Item -->
+            <h3 class="resume-title" data-i18n="resume.activitiesTitle">Activities</h3>
+
+            <div class="resume-item">
+              <ul>
+                <li data-i18n="resume.activity1">Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+                <li data-i18n="resume.activity2">Developed the "Eu Nunca" app, a web version of the "I Never Ever" game with AdSense and Firebase
+                  integration.</li>
+                <li data-i18n="resume.activity3">Developed the "Adviser" app, an app that gives the best worst advice.</li>
+
+              </ul>
+            </div><!-- End Resume Item -->
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title" data-i18n="resume.experienceTitle">Professional Experience</h3>
+
+            <div class="resume-item">
+              <h4 data-i18n="resume.exp1.title">Sr Analyst II Software Engineering</h4>
+              <h5 data-i18n="resume.exp1.date">November 2025 - Present</h5>
+              <p><em data-i18n="resume.exp1.company">DXC Technology, Remote</em></p>
+              <ul>
+                <li data-i18n="resume.exp1.bullet1">
+                  Work on project development and application support/maintenance in a fully remote role, delivering
+                  new features and resolving production issues for enterprise clients.
+                </li>
+                <li data-i18n="resume.exp1.bullet2">
+                  Collaborate with cross-functional teams across the software development lifecycle, from
+                  requirements analysis to deployment and post-release support.
+                </li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4 data-i18n="resume.exp2.title">System Analyst</h4>
+              <h5 data-i18n="resume.exp2.date">2023 - November 2025</h5>
+              <p><em data-i18n="resume.exp2.company">UNOESTE, University of Western São Paulo, Presidente Prudente, SP</em></p>
+              <ul>
+                <li data-i18n="resume.exp2.bullet1">Developed a parking payment module for students and staff using .NET 6.0, Bootstrap, and Flutter,
+                  integrated with a Payments API. The system
+                  processes approximately 700 vehicles per month and generates an average monthly revenue of R$5,000.
+                </li>
+                <li data-i18n="resume.exp2.bullet2">
+                  Implemented a fully anonymous harassment reporting system integrated into the university’s internal
+                  platform, built with .NET Framework 4.5.
+                  The module ensures employee confidentiality and automatically generates service protocols.
+                </li>
+                <li data-i18n="resume.exp2.bullet3">
+                  Built the “Consulta TCE” student document submission system using .NET Core, integrated with an
+                  Electronic Document Management System
+                  (GED). This eliminated the need for printed forms, processing nearly 5,000 documents from 1,000
+                  students across 7 academic programs, improving
+                  document validation for institutional partners.
+                </li>
+                <li data-i18n="resume.exp2.bullet4">
+                  Created a Self-Service Totem desktop system featuring client-side functionalities, restricted content
+                  access, and activity logging through
+                  Elasticsearch, enhancing user autonomy and operational transparency.
+                </li>
+                <li data-i18n="resume.exp2.bullet5">
+                  Managed ongoing system maintenance and deployments, resolving bugs, analyzing the feasibility of new
+                  features, and applying performance
+                  improvements to optimize system behavior.
+                </li>
+                <li data-i18n="resume.exp2.bullet6">
+                  Optimized and developed SQL queries in Informix and SQL Server databases, resulting in faster data
+                  retrieval and enhanced application performance
+                </li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4 data-i18n="resume.exp3.title">.Net Software Engineer</h4>
+              <h5 data-i18n="resume.exp3.date">2021 - 2023</h5>
+              <p><em data-i18n="resume.exp3.company">COBMAIS, Presidente Prudente, SP</em></p>
+              <ul>
+                <li data-i18n="resume.exp3.bullet1">Provided Tier 2 technical support (Level 2) by resolving complex bugs, correcting database
+                  inconsistencies, and fixing API/WebService
+                  integrations. Acted as the bridge between Level 1 support and the development team, effectively
+                  handling over 2,000 escalated tickets, including
+                  critical production issues.
+                </li>
+                <li data-i18n="resume.exp3.bullet2">
+                  Collaborated with client development teams to diagnose and resolve integration problems, ensuring the
+                  successful deployment of 15+ third-party
+                  API integrations.
+                </li>
+                <li data-i18n="resume.exp3.bullet3">
+                  Mentored junior support engineers, providing technical guidance and process knowledge, which
+                  significantly reduced ticket resolution times and
+                  improved team efficiency.
+                </li>
+                <li data-i18n="resume.exp3.bullet4">
+                  Created and delivered a comprehensive training program on the internal Stage Database, attended by 105
+                  users, with 65 completions, empowering
+                  new employees and clients to utilize system features better.
+                </li>
+                <li data-i18n="resume.exp3.bullet5">
+                  Led the development of a beta version of “Dynamic Data Extractions”, combining JS Flexmonster, ETL
+                  practices, and optimized SQL queries to
+                  improve reporting and data accessibility</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4 data-i18n="resume.exp4.title">Technical Support Product Specialist</h4>
+              <h5 data-i18n="resume.exp4.date">2019 - 2021</h5>
+              <p><em data-i18n="resume.exp4.company">MULTIPLUS CARD, Presidente Prudente, SP</em></p>
+              <ul>
+                <li data-i18n="resume.exp4.bullet1">Provided remote technical support for ERP (Max System Posto) and TEF (TEF Plus) software on a 12x36
+                  schedule, ensuring uninterrupted system
+                  availability for resellers, partners, and end-users.
+                </li>
+                <li data-i18n="resume.exp4.bullet2">
+                  Led incident management processes, performing root cause analysis and applying timely resolutions,
+                  which minimized downtime and improved
+                  overall service reliability.
+                </li>
+                <li data-i18n="resume.exp4.bullet3">
+                  Documented recurring software issues and collaborated closely with the development team, resulting in
+                  long-term system improvements and
+                  enhanced user experience.
+                </li>
+                <li data-i18n="resume.exp4.bullet4">
+                  Served as the primary escalation point for high-complexity cases, handling advanced troubleshooting
+                  and ensuring effective communication
+                  between technical teams and customers.</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="copyright text-center ">
+      <a href="../docs/Lucas%20Lanza%20Resume.pdf" target="_blank" data-i18n="footer.cv">
+        Download Updated CV (PDF)</a>
+      <p class="mb-0" data-i18n="footer.copyright">&copy; 2026 Lucas Lanza. All rights reserved.</p>
+    </div>
+
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Theme + Language -->
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+
+</body>
+
+</html>
