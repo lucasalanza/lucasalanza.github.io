@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Set theme before first paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem("site_theme");
+      var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
+  <title>Personal Trainer Template | Lucas Lanza</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal Trainer Template — a project by Lucas Lanza.">
+  <meta name="author" content="Lucas Lanza">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Personal Trainer Template | Lucas Lanza">
+  <meta property="og:description" content="Personal Trainer Template — a project by Lucas Lanza.">
+  <meta property="og:image" content="https://lucasalanza.github.io/assets/img/portfolio/personal-trainer.jpg">
+  <meta property="og:url" content="https://lucasalanza.github.io/projeto/personal-trainer/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Personal Trainer Template | Lucas Lanza">
+  <meta name="twitter:description" content="Personal Trainer Template — a project by Lucas Lanza.">
+  <meta name="twitter:image" content="https://lucasalanza.github.io/assets/img/portfolio/personal-trainer.jpg">
+
+  <link rel="canonical" href="https://lucasalanza.github.io/projeto/personal-trainer/">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Personal Trainer Template",
+    "url": "https://lucasalanza.github.io/projeto/personal-trainer/",
+    "image": "https://lucasalanza.github.io/assets/img/portfolio/personal-trainer.jpg",
+    "creator": {
+      "@type": "Person",
+      "name": "Lucas Lanza",
+      "url": "https://lucasalanza.github.io/perfil/"
+    }
+  }
+  </script>
+
+  <!-- Favicons -->
+  <link href="../../assets/img/favicon.ico" rel="icon">
+  <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page" data-page="personal-trainer">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <a href="../../index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Lucas Lanza</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a target="_blank" href="https://www.instagram.com/lucaslanza.7/" class="instagram"><i
+          class="bi bi-instagram"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/lucasalanza/" class="linkedin"><i
+          class="bi bi-linkedin"></i></a>
+    </div>
+
+    <div class="site-controls d-flex align-items-center justify-content-center">
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button type="button" data-lang="pt" aria-label="Português">PT</button>
+        <button type="button" data-lang="en" aria-label="English">EN</button>
+      </div>
+      <button type="button" class="theme-toggle" aria-label="Toggle light/dark theme">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../../index.html"><i class="bi bi-house navicon"></i><span data-i18n="nav.home">Home</span></a></li>
+        <li><a href="../../index.html#portfolio" class="active"><i class="bi bi-grid navicon"></i> <span data-i18n="portfolio.backToPortfolio">Back to portfolio</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <section class="section" style="padding-top: 140px;">
+      <div class="container" data-aos="fade-up">
+        <span class="project-card-badge" data-i18n="portfolio.filter.web">Web Systems</span>
+        <h1 class="mt-3" data-i18n="portfolio.personal.title">Personal Trainer Template</h1>
+                <div class="project-card-tags">
+                  <span class="tag">.NET 9</span>
+                  <span class="tag">Vue 3</span>
+                  <span class="tag">MySQL</span>
+                </div>
+
+        <div class="d-flex flex-wrap gap-2 mt-4">
+                  <a href="http://137.131.229.33/personal-trainer/" target="_blank" class="btn btn-outline-primary" data-i18n="portfolio.visitSite">Visit site</a>
+          <a href="../../index.html#portfolio" class="btn btn-outline-secondary" data-i18n="portfolio.backToPortfolio">Back to portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-background">
+      <div class="container" data-aos="fade-up">
+        <img src="../../assets/img/portfolio/personal-trainer.jpg" class="img-fluid mb-4" alt="Personal Trainer Template">
+        <p>
+          <span data-i18n="portfolio.personal.desc">Reusable site template for personal trainers — services, a training tips blog, staff profiles, service locations, and testimonials, all editable from a custom admin panel. Built with .NET 9, Vue 3, and MySQL.</span>
+        </p>
+        <p class="mt-3"><strong data-i18n="portfolio.goalsLabel">Goal:</strong> <span data-i18n="portfolio.personal.goal">Give any personal trainer a professional site — services, blog, and testimonials — ready to launch and manage without touching code.</span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="copyright text-center ">
+      <a href="../../index.html#portfolio" data-i18n="portfolio.backToPortfolio">Back to portfolio</a>
+      <p class="mb-0" data-i18n="footer.copyright">&copy; 2026 Lucas Lanza. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../../assets/js/main.js"></script>
+
+  <!-- Theme + Language -->
+  <script src="../../assets/js/theme.js"></script>
+  <script src="../../assets/js/i18n.js"></script>
+
+</body>
+
+</html>

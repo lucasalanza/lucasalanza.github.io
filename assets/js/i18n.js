@@ -15,6 +15,30 @@
       "meta.home.description": "Explore Lucas Lanza's software projects — .NET, Flutter, and full-stack systems built for real clients and products. Get in touch.",
       "meta.perfil.title": "Lucas Lanza | Resume & Experience",
       "meta.perfil.description": "Lucas Lanza's resume — over four years of full-stack experience in .NET, Flutter, and API integrations. Skills, education, and professional history.",
+      "meta.lumus-care.title": "Lumus Care | Lucas Lanza",
+      "meta.lumus-care.description": "Management system for home-healthcare clinics — scheduling, records, and billing in one place. Built with .NET 9, Vue 3, and MySQL.",
+      "meta.studio-tee.title": "Inara Studio Tee | Lucas Lanza",
+      "meta.studio-tee.description": "Public site for a tattoo studio — admin-managed gallery, collections, and WhatsApp-based quote requests. Built with .NET 9, Vue 3, and MySQL.",
+      "meta.revestidos-de-graca.title": "Revestidos de Graça | Lucas Lanza",
+      "meta.revestidos-de-graca.description": "Reusable e-commerce template for small apparel brands — catalog, blog, and sales dashboard. Built with .NET 9, Vue 3, and MySQL.",
+      "meta.salao-beleza.title": "Beauty Salon Template | Lucas Lanza",
+      "meta.salao-beleza.description": "Reusable site template for beauty salons — gallery, services, and testimonials, editable without touching code.",
+      "meta.estetica-automotiva.title": "Car Detailing Template | Lucas Lanza",
+      "meta.estetica-automotiva.description": "Reusable site template for car detailing shops — services, pricing, products, and gallery, editable without touching code.",
+      "meta.personal-trainer.title": "Personal Trainer Template | Lucas Lanza",
+      "meta.personal-trainer.description": "Reusable site template for personal trainers — services, a training tips blog, and testimonials, editable without touching code.",
+      "meta.oficina-mecanica.title": "Auto Repair Shop Template | Lucas Lanza",
+      "meta.oficina-mecanica.description": "Reusable site template for auto repair shops — services, parts, maintenance tips, and gallery, editable without touching code.",
+      "meta.eununca.title": "Eu Nunca | Lucas Lanza",
+      "meta.eununca.description": "The digital version of the classic \"Never Have I Ever\" game, with question categories for 2 or more players.",
+      "meta.advisor.title": "The Advisor | Lucas Lanza",
+      "meta.advisor.description": "A pocket-sized source of brilliantly bad advice, available in 4 languages.",
+      "meta.microsoft-azure.title": "Microsoft Azure Overview | Lucas Lanza",
+      "meta.microsoft-azure.description": "A summary of Microsoft Azure functionality, written during a postgraduate specialization in web application development.",
+      "meta.pandemic.title": "The Pandemic and Remote Work | Lucas Lanza",
+      "meta.pandemic.description": "An article on how Covid-19 accelerated the adoption of remote work, written for a postgraduate course.",
+      "meta.encryption.title": "Encryption for Data Protection | Lucas Lanza",
+      "meta.encryption.description": "An overview of how encryption works and its advantages and disadvantages, written during undergraduate studies.",
 
       "nav.home": "Home",
       "nav.about": "About",
@@ -111,7 +135,7 @@
       "resume.exp4.bullet4": "Served as the primary escalation point for high-complexity cases, handling advanced troubleshooting and ensuring effective communication between technical teams and customers.",
 
       "portfolio.heading": "Portfolio",
-      "portfolio.description": "Sometimes I study on my own and develop something. Some of these projects I publish as products, while others remain as personal knowledge. Below, you can see the ones I have published. For other projects, feel free to check out my GitHub or contact me.",
+      "portfolio.description": "Systems built for real clients, reusable templates, apps, and articles I've published. For other projects, check out my GitHub or get in touch.",
       "portfolio.filter.all": "All",
       "portfolio.filter.web": "Web Systems",
       "portfolio.filter.app": "App",
@@ -119,11 +143,16 @@
       "portfolio.filter.article": "Article",
 
       "portfolio.clientsHeading": "Client Sites",
-      "portfolio.clientsIntro": "Business sites and admin systems built for real clients, plus reusable templates ready to launch for new ones.",
+      "portfolio.clientsIntro": "Business sites and admin systems for real clients, plus templates ready to launch with new ones.",
       "portfolio.projectsHeading": "Projects",
       "portfolio.projectsIntro": "Apps, articles, and presentations I built or wrote on my own.",
       "portfolio.visitSite": "Visit site",
       "portfolio.goalsLabel": "Goal:",
+      "portfolio.viewDetails": "View details",
+      "portfolio.backToPortfolio": "Back to portfolio",
+      "portfolio.techStackLabel": "Tech stack",
+      "portfolio.downloadApp": "Download the app",
+      "portfolio.viewPdf": "View PDF",
 
       "portfolio.lumuscare.title": "Lumus Care",
       "portfolio.lumuscare.desc": "Management system for home-healthcare clinics — helps small clinics schedule visits, track client records, manage professional availability, and handle billing in one place. Built with .NET 9, Vue 3, and MySQL using Clean Architecture and CQRS. Private client project.",
@@ -174,6 +203,30 @@
       "meta.home.description": "Conheça os projetos de software do Lucas Lanza — sistemas full-stack em .NET e Flutter, construídos para clientes e produtos reais. Entre em contato.",
       "meta.perfil.title": "Lucas Lanza | Currículo & Experiência",
       "meta.perfil.description": "Currículo do Lucas Lanza — mais de quatro anos de experiência full-stack em .NET, Flutter e integrações de API. Habilidades, formação e histórico profissional.",
+      "meta.lumus-care.title": "Lumus Care | Lucas Lanza",
+      "meta.lumus-care.description": "Sistema de gestão para clínicas de home care — agendamento, prontuário e faturamento em um só lugar. Construído com .NET 9, Vue 3 e MySQL.",
+      "meta.studio-tee.title": "Inara Studio Tee | Lucas Lanza",
+      "meta.studio-tee.description": "Site público para um estúdio de tatuagem — galeria gerenciada pelo admin, coleções e pedido de orçamento via WhatsApp. Construído com .NET 9, Vue 3 e MySQL.",
+      "meta.revestidos-de-graca.title": "Revestidos de Graça | Lucas Lanza",
+      "meta.revestidos-de-graca.description": "Template reutilizável de e-commerce para pequenas marcas de roupas — catálogo, blog e dashboard de vendas. Construído com .NET 9, Vue 3 e MySQL.",
+      "meta.salao-beleza.title": "Template para Salão de Beleza | Lucas Lanza",
+      "meta.salao-beleza.description": "Template reutilizável para salões de beleza — galeria, serviços e depoimentos, editável sem mexer em código.",
+      "meta.estetica-automotiva.title": "Template para Estética Automotiva | Lucas Lanza",
+      "meta.estetica-automotiva.description": "Template reutilizável para estéticas automotivas — serviços, preços, produtos e galeria, editável sem mexer em código.",
+      "meta.personal-trainer.title": "Template para Personal Trainer | Lucas Lanza",
+      "meta.personal-trainer.description": "Template reutilizável para personal trainers — serviços, blog de dicas e depoimentos, editável sem mexer em código.",
+      "meta.oficina-mecanica.title": "Template para Oficina Mecânica | Lucas Lanza",
+      "meta.oficina-mecanica.description": "Template reutilizável para oficinas mecânicas — serviços, peças, dicas de manutenção e galeria, editável sem mexer em código.",
+      "meta.eununca.title": "Eu Nunca | Lucas Lanza",
+      "meta.eununca.description": "A versão digital do clássico jogo \"Eu Nunca\", com categorias de perguntas para 2 ou mais jogadores.",
+      "meta.advisor.title": "The Advisor | Lucas Lanza",
+      "meta.advisor.description": "Uma fonte de bolso de conselhos brilhantemente ruins, disponível em 4 idiomas.",
+      "meta.microsoft-azure.title": "Introdução ao Microsoft Azure | Lucas Lanza",
+      "meta.microsoft-azure.description": "Um resumo das funcionalidades do Microsoft Azure, escrito durante a pós-graduação em desenvolvimento de aplicações web.",
+      "meta.pandemic.title": "A Pandemia e o Trabalho Remoto | Lucas Lanza",
+      "meta.pandemic.description": "Um artigo sobre como a Covid-19 acelerou a adoção do trabalho remoto, escrito para um curso de pós-graduação.",
+      "meta.encryption.title": "Criptografia para Proteção de Dados | Lucas Lanza",
+      "meta.encryption.description": "Um resumo de como funciona a criptografia e suas vantagens e desvantagens, escrito durante a graduação.",
 
       "nav.home": "Início",
       "nav.about": "Sobre",
@@ -270,7 +323,7 @@
       "resume.exp4.bullet4": "Atuei como ponto principal de escalonamento para casos de alta complexidade, conduzindo troubleshooting avançado e garantindo comunicação eficaz entre times técnicos e clientes.",
 
       "portfolio.heading": "Portfólio",
-      "portfolio.description": "Às vezes estudo por conta própria e desenvolvo algo. Alguns desses projetos eu publico como produtos, enquanto outros permanecem como conhecimento pessoal. Abaixo, você pode ver os que já publiquei. Para outros projetos, fique à vontade para conferir meu GitHub ou entrar em contato.",
+      "portfolio.description": "Sistemas para clientes reais, templates reutilizáveis, apps e artigos que já publiquei. Para outros projetos, veja meu GitHub ou entre em contato.",
       "portfolio.filter.all": "Todos",
       "portfolio.filter.web": "Sistemas Web",
       "portfolio.filter.app": "Apps",
@@ -278,11 +331,16 @@
       "portfolio.filter.article": "Artigo",
 
       "portfolio.clientsHeading": "Sites para Clientes",
-      "portfolio.clientsIntro": "Sites institucionais e sistemas administrativos construídos para clientes reais, além de templates reutilizáveis prontos para lançar para novos clientes.",
+      "portfolio.clientsIntro": "Sites e sistemas administrativos para clientes reais, além de templates prontos para lançar com novos clientes.",
       "portfolio.projectsHeading": "Projetos",
       "portfolio.projectsIntro": "Apps, artigos e apresentações que fiz ou escrevi por conta própria.",
       "portfolio.visitSite": "Visitar site",
       "portfolio.goalsLabel": "Objetivo:",
+      "portfolio.viewDetails": "Ver detalhes",
+      "portfolio.backToPortfolio": "Voltar ao portfólio",
+      "portfolio.techStackLabel": "Tecnologias",
+      "portfolio.downloadApp": "Baixar o app",
+      "portfolio.viewPdf": "Ver PDF",
 
       "portfolio.lumuscare.title": "Lumus Care",
       "portfolio.lumuscare.desc": "Sistema de gestão para clínicas de saúde domiciliar — ajuda pequenas clínicas a agendar visitas, gerenciar prontuário de clientes, disponibilidade de profissionais e faturamento em um só lugar. Construído com .NET 9, Vue 3 e MySQL usando Clean Architecture e CQRS. Projeto privado de cliente.",
@@ -337,29 +395,6 @@
     return browserLang.startsWith("pt") ? "pt" : "en";
   }
 
-  let typedInstance = null;
-
-  function reinitTyped(lang) {
-    const el = document.querySelector(".typed");
-    if (!el || typeof Typed === "undefined") return;
-
-    const items = lang === "pt"
-      ? ["Desenvolvedor .NET", "Analista de Sistemas", "Brasileiro", "Viajante"]
-      : [".NET Developer", "System Analyst", "Brazilian", "Traveler"];
-
-    if (typedInstance) {
-      typedInstance.destroy();
-    }
-    el.textContent = dict[lang]["hero.typedFallback"];
-    typedInstance = new Typed(".typed", {
-      strings: items,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000,
-    });
-  }
-
   function applyLanguage(lang) {
     if (!dict[lang]) lang = "en";
 
@@ -380,7 +415,6 @@
     });
 
     localStorage.setItem(STORAGE_KEY, lang);
-    reinitTyped(lang);
   }
 
   function initLanguageSwitcher() {
