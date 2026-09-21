@@ -959,6 +959,31 @@ section,
   outline-offset: 2px;
 }
 
+.project-feature {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.project-feature i {
+  font-size: 24px;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+
+.project-feature h4 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.project-screenshot-caption {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 8px;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
